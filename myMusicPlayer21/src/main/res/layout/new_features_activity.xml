@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_01"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMethod01"
+            android:text="@string/new_features_button_01"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_02"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMethod02"
+            android:text="@string/new_features_button_02"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_03"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMethod03"
+            android:text="@string/new_features_button_03"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_04"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMethod04"
+            android:text="@string/new_features_button_04"
+            android:visibility="gone" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_05"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonMethod04"
+            android:text="@string/new_features_button_05"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/donation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="8dip"
+            android:text="@string/new_features_donation"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/donationbutton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDonationButton"
+                android:text="@string/donation_title" />
+
+            <Button
+                android:id="@+id/commentbutton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCommentButton"
+                android:text="@string/comment_title" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:autoLink="all"
+            android:padding="8dip"
+            android:text="@string/feedback_please"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:autoLink="all"
+            android:padding="8dip"
+            android:text="@string/user_guide_here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ok_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:onClick="buttonOk"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</ScrollView>

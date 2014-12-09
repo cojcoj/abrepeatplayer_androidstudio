@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#55666666"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:drawable/divider_horizontal_dark" />
+
+    <TextView
+        android:id="@+id/marqueetext"
+        style="@style/AudioFileInfoOverlayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:drawable/divider_horizontal_dark" />
+
+    <LinearLayout
+        android:id="@+id/dialoglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/dialog_text"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@android:drawable/divider_horizontal_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dialog_ok"
+                style="@style/TrButton"
+                android:layout_width="86dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dialog_neutral"
+                style="@style/TrButton"
+                android:layout_width="86dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                style="@style/TrButton"
+                android:layout_width="86dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abshiftlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/leftmostbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/leftmidbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/leftbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/checkmodebutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/jumpzerobutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/rightbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/rightmidbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/rightmostbutton"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ok_button"
+                style="@style/TrButton"
+                android:layout_width="150dip"
+                android:layout_height="52dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="0"
+                android:text="@android:string/ok"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/musicbuttonslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="8dip" >
+
+            <ImageButton
+                android:id="@+id/prev"
+                style="@style/TrButton.Previous"
+                android:layout_height="60dip" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                style="@style/TrButton.Play"
+                android:layout_height="60dip" />
+
+            <ImageButton
+                android:id="@+id/next"
+                style="@style/TrButton.Next"
+                android:layout_height="60dip" />
+
+            <ImageButton
+                android:id="@+id/abrepeat"
+                style="@style/TrButton"
+                android:layout_height="60dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="4dip"
+            android:paddingTop="1dip" >
+
+            <TextView
+                android:id="@+id/currenttime"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:paddingLeft="3dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/apostime"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="60dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/jumpbuttoncenter"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="60dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bpostime"
+                style="@style/TrButton"
+                android:layout_width="71dip"
+                android:layout_height="60dip"
+                android:shadowColor="#ffff0000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totaltime"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="5dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:drawable/divider_horizontal_dark" />
+
+</LinearLayout>

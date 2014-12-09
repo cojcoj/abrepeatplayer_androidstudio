@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <string name="onesong">1 song</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <plurals name="Nsongs">
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> songs</item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <plurals name="Nsongscomp">
+        <item quantity="other"><xliff:g id="count_for_artist">%2$d</xliff:g> of <xliff:g id="total_count">%1$d</xliff:g> songs</item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">1 album</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> albums</item>
+    </plurals>
+
+    <!--
+    This string is used as the format string in a String.format call,
+    and 5 additional arguments are available for printing:
+    1 - hours
+    2 - minutes
+    3 - minutes%60
+    4 - seconds
+    5 - second%60
+    -->
+    <skip/>
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string translatable="false" name="durationformatshort"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string translatable="false" name="durationformatlong"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for year.month.day.hour.minute -->
+    <!--%6$tY:%6$tb:%6$td:%1$d:%3$02d:%5$02d-->
+    <string translatable="false" name="durationformatverylong"><xliff:g id="format">%2$tF %1$02d:%3$02d </xliff:g></string>
+    <string translatable="false" name="hourminuteformat"><xliff:g id="format">%1$02d:%3$02d </xliff:g></string>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <string name="goto_start">Library</string>
+    <!-- Menu item that takes the user to the "now playing" screen of the music player -->
+    <string name="goto_playback">Playback</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <string name="party_shuffle">Party shuffle</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <string name="party_shuffle_off">Party shuffle off</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <string name="delete_item">Delete</string>
+    <!-- Menu item to play back all the songs in the currently showing list in shuffle mode -->
+    <string name="shuffle_all">Shuffle all</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <string name="play_all">Play all</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <string name="delete_artist_desc">All songs by <xliff:g id="artist">%s</xliff:g> will be permanently deleted from the SD card.</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <string name="delete_album_desc">The entire album \"<xliff:g id="album">%s</xliff:g>\" will be permanently deleted from the SD card.</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <string name="delete_song_desc">\"<xliff:g id="song">%s</xliff:g>\" will be permanently deleted from the SD card.</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <string name="delete_confirm_button_text">OK</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">1 song was deleted.</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other"><xliff:g id="songs_to_delete">%d</xliff:g> songs were deleted.</item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <string name="scanning">Scanning SD card\u2026</string>
+
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <string name="nowplaying_title">Now playing</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <string name="partyshuffle_title">Party shuffle</string>
+    <!-- Artist screen title -->
+    <string name="artists_title">Artists</string>
+    <!-- Category label on Library screen -->
+    <string name="albums_menu">Albums</string>
+    <!-- Albums screen title -->
+    <string name="albums_title">Albums</string>
+    <!-- Category label on Library screen -->
+    <string name="tracks_menu">Songs</string>
+    <!-- Songs screen title -->
+    <string name="tracks_title">Songs</string>
+    <!-- Category label on Library screen -->
+    <string name="playlists_menu">Playlists</string>
+    <!-- Playlists screen title -->
+    <string name="playlists_title">Playlists</string>
+    <!-- Videos screen title -->
+    <string name="videos_title">Videos</string>
+    <!-- All media screen title -->
+    <string name="all_title">All media</string>
+    <!-- Category label on Library screen -->
+    <string name="browse_menu">Artists</string>
+    <!-- Library screen, menu item -->
+    <string name="search_title">Search</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <string name="no_tracks_title">No songs</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <string name="no_videos_title">No videos</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <string name="no_playlists_title">No playlists</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <string name="delete_playlist_menu">Delete</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <string name="edit_playlist_menu">Edit</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <string name="rename_playlist_menu">Rename</string>
+    <!-- Ab_list context menu item to export AB part sound-->
+    <string name="export_ab_sound">Export AB as Sound</string>
+    <!-- Ab_list context menu item to AB param settings-->
+    <string name="ab_settings">AB Preferences</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <string name="playlist_deleted_message">Playlist deleted.</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="playlist_renamed_message">Playlist renamed.</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <string name="recentlyadded">Recently added</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <string name="recentlyadded_title">Recently added</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <string name="podcasts_listitem">Podcasts</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <string name="podcasts_title">Podcasts</string>
+    <!-- Title of screen when no sd card is present -->
+    <string name="sdcard_missing_title">No SD card</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <string name="sdcard_missing_message">Your phone does not have an SD card inserted.</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <string name="sdcard_busy_title">SD card unavailable</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <string name="sdcard_busy_message">Sorry, your SD card is busy.</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <string name="sdcard_error_title">SD card error</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <string name="sdcard_error_message">An error was encountered on your SD card.</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <string name="unknown_artist_name">Unknown artist</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <string name="unknown_album_name">Unknown album</string>
+    <!-- Toast after turning shuffle on -->
+    <string name="shuffle_on_notif">Shuffle is on.</string>
+    <!-- Toast after turning shuffle off -->
+    <string name="shuffle_off_notif">Shuffle is off.</string>
+    <!-- Toast after turning repeat off -->
+    <string name="repeat_off_notif">Repeat is off.</string>
+    <!-- Toast after turning single repeat on -->
+    <string name="repeat_current_notif">Repeating current song.</string>
+    <!-- Toast after turning repeat all on -->
+    <string name="repeat_all_notif">Repeating all songs.</string>
+    <!-- Individual song context menu item -->
+    <string name="ringtone_menu">Use as phone ringtone</string>
+    <!-- Menu item -->
+    <string name="ringtone_menu_short">Use as ringtone</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <string name="ringtone_set">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" set as phone ringtone.</string>
+    <!-- Context menu item -->
+    <string name="play_selection">Play</string>
+    <!-- Context menu item -->
+    <string name="add_to_playlist">Add to playlist</string>
+    <!-- Context menu item -->
+    <string name="queue">Current playlist</string>
+    <!-- Context menu item -->
+    <string name="new_playlist">New</string>
+    <!-- Template for newly created playlist name -->
+    <string name="new_playlist_name_template">New playlist <xliff:g id="number">%d</xliff:g></string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 song added to playlist.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> songs added to playlist.</item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <string name="emptyplaylist">Selected playlist is empty.</string>
+    <!-- Toast after trying to set BPoint too close to APoint -->
+    <string name="startendtooclose">AB points are too close.</string>
+    <!-- Button name when saving a playlist -->
+    <string name="create_playlist_create_text">Save</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <string name="create_playlist_overwrite_text">Overwrite</string>
+    <!-- Dialog box title -->
+    <string name="service_start_error_title">Playback problem</string>
+    <!-- Dialog box message -->
+    <string name="service_start_error_msg">Sorry, the song could not be played.</string>
+    <!-- Dialog box button -->
+    <string name="service_start_error_button">OK</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <string-array name="weeklist">
+        <item>"1 week"</item>
+        <item>"2 weeks"</item>
+        <item>"3 weeks"</item>
+        <item>"4 weeks"</item>
+        <item>"5 weeks"</item>
+        <item>"6 weeks"</item>
+        <item>"7 weeks"</item>
+        <item>"8 weeks"</item>
+        <item>"9 weeks"</item>
+        <item>"10 weeks"</item>
+        <item>"11 weeks"</item>
+        <item>"12 weeks"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <string name="weekpicker_set">Done</string>
+    <!-- Title of time span picker -->
+    <string name="weekpicker_title">Set time</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <string name="save_as_playlist">Save as playlist</string>
+    <!-- menu item to clear the current playlist -->
+    <string name="clear_playlist">Clear playlist</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicbrowserlabel">AB Audio Repeat Player</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicshortcutlabel">AB Repeat Player playlist</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediaplaybacklabel">AB Audio Repeat Player</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="videobrowserlabel">AB Video Repeat Player</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediapickerlabel">AB Audio Repeat Player</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <string name="playback_failed">Sorry, the player does not support this type of audio file.</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <string name="cancel">Cancel</string>
+    
+    <string name="quit">Close</string>
+    <string name="running">Running</string>
+    <string name="hidden">Hidden</string>
+    <string name="click_to_restore">Click to Restore</string>
+    
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <string name="remove_from_playlist">Remove from playlist</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <string name="streamloadingtext">Connecting to <xliff:g id="host">%s</xliff:g></string>
+
+    <!-- title of contextual music search menu -->
+    <string name="mediasearch">Search for <xliff:g id="term" example="Beethoven">%s</xliff:g> using:</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <string name="working_artists">Artists\u2026</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <string name="working_albums">Albums\u2026</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <string name="working_songs">Songs\u2026</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <string name="working_playlists">Playlists\u2026</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <string name="loading">Loading</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <string name="sort_by_track">Tracks</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <string name="sort_by_album">Albums</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <string name="sort_by_artist">Artists</string>
+    <!--  Title of the music picker activity. -->
+    <string name="music_picker_title">Select music track</string>
+
+    <!-- Title for track number in music gadget -->
+    <string name="gadget_track">Track <xliff:g id="track_number">%d</xliff:g></string>
+
+    <!-- Toast after streamStarter activity receives PLAYBACK_COMPLETE in case of an error -->
+    <string name="fail_to_start_stream">Failed to play the requested stream.</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <string name="search_settings_description">Artists, albums, and tracks</string>
+
+    <!-- Shown in the search box as a hint -->
+    <string name="search_hint">Search Music</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <string name="widget_initial_text">Touch to select music.</string>
+    
+    <!-- Text shown on menu to adjust A point -->
+    <string name="adjust_apoint">Adjust A Point</string>
+    <!-- Text shown on menu to adjust B point -->
+    <string name="adjust_bpoint">Adjust B Point</string>
+    <!-- Text shown on menu to record AB points -->
+    <string name="record_abpoints">Save AB Points</string>
+    <!-- Text shown on menu to browse AB points -->
+    <string name="browse_abpoints">Browse AB Points</string>
+    <!-- Text shown on submenu to forward A or B point 2000msec -->
+    <string name="forward_2000msec">Forward  &#160;&#160;2.0sec > > ></string>
+    <!-- Text shown on submenu to forward A or B point 1000msec -->
+    <string name="forward_1000msec">Forward  &#160;&#160;1.0sec > ></string>
+    <!-- Text shown on submenu to forward A or B point 200msec -->
+    <string name="forward_200msec">Forward  &#160;&#160;0.2sec ></string>
+    <!-- Text shown on submenu to forward A or B point 200msec -->
+    <string name="backward_200msec">Backward 0.2sec &lt;</string>
+    <!-- Text shown on submenu to forward A or B point 1000msec -->
+    <string name="backward_1000msec">Backward 1.0sec &lt; &lt;</string>
+    <!-- Text shown on submenu to forward A or B point 2000msec -->
+    <string name="backward_2000msec">Backward 2.0sec &lt; &lt; &lt;</string>
+    <string name="abpos_deleted_message">AB Pts or BM deleted.</string>
+    <string name="abpos_renamed_message">AB Pts or BM renamed.</string>
+    <string name="abpos_recorded">AB Positions recorded.</string>
+    <string name="abpos_cleared">AB Positions cleard.</string>
+    <string name="abmode_set">AB Repeat Mode</string>
+    <string name="abmode_not_set">AB Repeat Mode Not Set</string>
+    <string name="one_sec">1 Sec</string>
+    <string name="sub_sec">0.1 Sec</string>
+    <string name="are_you_sure">Are You Sure?</string>
+    <string name="ab_delete_listed">Delete AB &amp; BM Listed.</string>
+    <string name="ab_delete_database">Delete AB &amp; BM Database.</string>
+    <string name="db_on_sd_failed">Couldn\&apos;t create or copy database on SD-Card.</string>
+    <string name="ab_db_backup">Backup AB &amp; BM Database.</string>
+    <string name="ab_db_restore">Restore AB &amp; BM Database.</string>
+    <string name="ab_db_backupped_message">AB &amp; BM Database Backupped</string>
+    <string name="ab_db_restored_message">Restore AB &amp; BM Database Restored</string>
+    <string name="abpos_order">Display Order</string>
+    <string name="abpos_order_creation_normal">by Creation Normal</string>
+    <string name="abpos_order_creation_reverse">by Creation Reverse</string>
+    <string name="abpos_order_apos_normal">by A Point Normal</string>
+    <string name="abpos_order_apos_reverse">by A Point Reverse</string>
+    <string name="abpos_order_name_normal">by Name Normal</string>
+    <string name="abpos_order_name_reverse">by Name Reverse</string>
+    <string name="ab_adjustable_bm_on">Enable BM Adjustable</string>
+    <string name="ab_adjustable_bm_off">Disable BM Adjustable</string>
+    <string name="abpos_only_one_window">Only One Window is Allowed.</string>
+    <string name="bookmark_recorded">Bookmark recorded.</string>
+    <string name="same_ab_exists">Same AB points exist.</string>
+    <string name="want_to_continue">Continue and add?</string>
+    
+    <string name="ab_prefs">AB Preferences</string>
+    <string name="ab_prefs_title">AB Repeat Preferences</string>
+    <string name="ab_prefs_summary">AB Repeat behavior options</string>
+    <string name="mode_switch_wclick_main_title">Mode SW Double Click</string>
+    <string name="mode_switch_wclick_main_summary">Enable in Main Controls</string>
+    <string name="mode_switch_wclick_bt_title">Mode SW Double Click</string>
+    <string name="mode_switch_wclick_bt_summary">Enable in Blutooh Operations</string>
+    <string name="ask_if_duplicated_title">Ask AB Duplication</string>
+    <string name="ask_if_duplicated_summary">If the same AB already recorded, ask if you want to proceed.</string>
+    <string name="ask_if_overwrite_title">Ask Overwrite</string>
+    <string name="ask_if_overwrite_summary">If recorded AB was modified and to be recorded, ask if you want to overwrite or just add.</string>
+    <string name="prev_behaviour_old_title">Old Prev Button Behaviour</string>
+    <string name="prev_behaviour_old_summary">Double-click on Prev Button starts playing the prev music track.</string>
+    <string name="ab_edited">AB Points edited</string>
+    <string name="ab_update_or_new">Update Old or Create New?</string>
+    <string name="ab_update">Update</string>
+    <string name="ab_new">New</string>
+    <string name="abpos_updated">AB Positions updated</string>
+    
+    <string name="release_note">Release Note</string>
+    <string name="new_features">AB Repeat 3.7.5 Changes</string>
+    <string name="new_features_01">1. Check Mode Setting became sticky. It\&apos;s remembered now. You don\&apos;t have to set it every time.(Audio/Video)</string>
+    <string name="new_features_02">2. Before recording duplicated AB Points, it asks if you really want it. And if you edit it after record it or selected it from AB List, it asks if you want to rewrite it or save it as a new entry.(Audio/Video)</string>
+    <string name="new_features_03">3. In normal AB Repeat, double-clicking Prev Button will not clear AB Repeat, but only jumps to A Point.(Audio/Video)</string>
+    <string name="new_features_04">4. If you don\&apos;t like 2. or 3., you can select old behaviours in \&quot;AB Preferences\&quot; in Menu.(Audio/Video)</string>
+    <string name="new_features_05">5. Video SlowMotion (poor audio quality, sorry).</string>
+    <string name="new_features_donation">* Donation or encouraging comments or rating would be appreciated.　Very many thanks to the people who have donated already!</string>
+    <string name="new_features_button_01">AB Repeat Preferences</string>
+    <string name="new_features_button_02">Playing AB&amp;BM list Guide</string>
+    <string name="new_features_button_03">Bluetooth User Guide</string>
+    <string name="new_features_button_04">Introduction Video</string>
+    <string name="new_features_button_05">Introduction Video</string>
+    <string name="welcome">Welcome to AB Repeat Player</string>
+    <string name="welcome_01">Detailed User Guide is always available inside this app.\nClick MENU button in the playback screen and select \&quot;Help\&quot;, or click the button below.\nUser Guide is also available on the web.</string>
+    <string name="welcome_button_01">AB Repeat Player Guide</string>
+    <string name="welcome_button_02">Introduction YouTube Video</string>
+    <string name="introduction_video_url">http://www.youtube.com/watch?v=ohzBg9YuqlU</string>
+    <string name="donation_title">DONATION</string>
+    <string name="comment_title">COMMENT and RATING</string>
+    <string name="ab_help_menu">Help</string>
+    <string name="ab_help_ab_sub">AB Repeat</string>
+    <string name="ab_help_adjust_ab_sub">Adjust AB Points</string>
+    <string name="ab_help_interval_ab_sub">Interval between AB Repeats</string>
+    <string name="ab_help_jump_sub">Jump</string>
+    <string name="ab_help_bookmark_sub">Bookmark</string>
+    <string name="ab_help_list_traverse_sub">Playing AB&amp;BM list</string>
+    <string name="ab_help_manage_sub">Manage AB&amp;BM List</string>
+    <string name="ab_help_lyric_sub">Display Lyric</string>
+    <string name="ab_help_migration_sub">Data Migrations between devices</string>
+    <string name="ab_help_float_pad_sub">Float Pad</string>
+    <string name="ab_help_bluetooth_sub">Control by Bluetooth</string>
+    <string name="ab_help_ringdroid_sub">Export AB as Sound</string>
+    <string name="ab_donation">DONATION</string>
+    <string name="ab_float_pad">Float Pad</string>
+    <string name="sleep_timer">Sleep Timer</string>
+    <string name="lyric">Lyric</string>
+    <string name="lyric_options">Lyric Options</string>
+    <string name="lyric_options_auto">Auto: Embedded Tag &gt;&gt; musixmatch</string>
+    <string name="lyric_options_id3tag">Embedded Tag</string>
+    <string name="lyric_options_musix">musixmatch</string>
+    <string name="not_mp3">Only Mp3\&apos;s \&quot;Id3v2 USLT Tag\&quot; is supported</string>
+    <string name="no_id3tag">No Mp3\&apos;s \&quot;Id3v2 USLT Tag\&quot; found</string>
+    <string name="empty">Empty</string>
+    <string name="clear">Clear</string>
+    <string name="set">Set</string>
+    <string name="current_timer">Current Timer</string>
+    <string name="no_timer_set">No Timer Set</string>
+    <string name="font_enlarge">Enlarge Font</string>
+    <string name="font_shrink">Shrink Font</string>
+    <string name="bookmark_help_one">Click to define a bookmark.</string>
+    <string name="bookmark_help_two">Click to save the bookmark.</string>
+    <string name="bookmark_help_three">Click to cancel without saving the bookmark.</string>
+    <string name="bookmark_help_four">Long-click to list bookmarks and AB points.</string>
+    <string name="bookmark_help_five">Select a bookmark to return to play from the bookmark.</string>
+    <string name="bookmark_help_six">Click to jump to the bookmark. Long-click to adjust the bookmark position.</string>
+    <string name="bookmark_help_seven">Menu of the list. If BM Adjustable is disabled (default), it just jumps to the position when you select the bookmark. If enabled, it sets BM adjust and B point set mode. You can use the bookmark without going back to the list.</string>
+    <string name="abrepeat_help_one">Click to set A point. Button changes.</string>
+    <string name="abrepeat_help_two">Click to set B point and start AB repeat. Button changes.</string>
+    <string name="abrepeat_help_three">Click to clear AB repeat.Button changes.</string>
+    <string name="abrepeat_help_four">Click to save AB. Long-click to list them.</string>
+    <string name="abrepeat_help_five">Click to select saved AB points.</string>
+    <string name="jump_help_one">Click one of three Jump Buttons to jump backward specified seconds.</string>
+    <string name="jump_help_two">Long-click any of three Jump Buttons to change how far you want to jump and direction. You can choose between 0.0 to 99.9 sec.</string>
+    <string name="manage_help_one">Long-click to edit any entry.</string>
+    <string name="manage_help_two">You can delete or rename it.</string>
+    <string name="manage_help_three">Delete entries belong to this music, or delete all. Or you can backup or restore database. You can also change the order of display.</string>
+    <string name="manage_help_four">Select one of six options. This will be applied to all contents of audio and video.</string>
+    <string name="adjust_ab_help_one">Click to adjust A or B points.</string>
+    <string name="adjust_ab_help_two">Click any to shift A or B.</string>
+    <string name="adjust_ab_help_three">Set Check and you can check the result immediately after clicking shift buttons. Click OK if done.</string>
+    <string name="adjust_ab_help_four">Long-click shift buttons to edit shift distances.</string>
+    <string name="interval_ab_help_one">Click to adjust A point.</string>
+    <string name="interval_ab_help_two">Click Interval (or Pause) button. Make sure it\'s not in Check mode.</string>
+    <string name="interval_ab_help_three">Set the interval beween AB Repeats.</string>
+    <string name="lyric_help_01">Press \&quot;Menu\&quot; while playing music, and click \&quot;More\&quot;.</string>
+    <string name="lyric_help_02">Click \&quot;Lyric\&quot;.</string>
+    <string name="lyric_help_03">The lyric of the song will be displayed, if it is embedded properly.</string>
+    <string name="lyric_help_04">Only MP3\&apos;s USLT Id3v2 lyric is supported now. You can embed a lyric text into your MP3 file by many tools such as iTunes. If lyric cannot be displayed, try \&quot;Convert ID3 tag\&quot; function of iTunes to convert it to v2.4.</string>
+    <string name="lyric_help_05">Change Font Size by pinching or spreading the text.</string>
+    <string name="lyric_help_06">You can select and copy a part of the text.</string>
+    <string name="migration_help_01">1. Copy musics to the same places of the new device.</string>
+    <string name="migration_help_02">2. Copy database file (\\sdcard\\com.learnerstech\\abrepeat\\abrepeat) to the same location on the new device.</string>
+    <string name="migration_help_03">3. If any of AB Repeat Players on devices are older than 3.5.2, please update them and go to AB points list. This will create or migrate the database to the corret locations.</string>
+    <string name="bluetooth_help_01">Using Prev, Pause/Play, Next buttons, you can traverse inside the AB&amp;BM list and play.(Audio only)</string>
+    <string name="bluetooth_help_02">Switching between two modes may not work with some Bluetooth devices. Please report it to the development. If you can use Long click or Stop, we do not recommend to use double click. It generates three commands, Pause-Switch-Play. If \&quot;Float Pad\&quot; takes the focus, Bluetooth events cannot be processed. Touch backgroud task to take the focus from it.</string>
+    <string name="bluetooth_help_alert_01">AB&amp;BM Mode set snd</string>
+    <string name="bluetooth_help_alert_02">NORMAL Mode set snd</string>
+    <string name="float_pad_help_00">You can have a control button pad floating over any other apps. You can use it over a web browser, pdf reader or lyric readers.\nCurrent limitatios -- No current position, no progress bar, no FF or REW and you cannot change jump distances from this. Of course, you still can change jump distances from the ordinary screen.</string>
+    <string name="float_pad_help_01">Select \&quot;Float Pad\&quot; from the Menu of the Playback screen.</string>
+    <string name="float_pad_help_02">Now you have a transparent floating control pad.\nIf you want to work on the app underneath, make sure that it has the focus by touching it.\nIf the Float Pad has the focus, all the commands go to it.</string>
+    <string name="float_pad_help_03">You can start and stop any apps without disturbing the Float Pad. You can use \&quot;Hide or Minimize\&quot; Button or \&quot;Close\&quot; Button just like any other window systems.</string>
+    <string name="float_pad_help_04">If you have hidden the Float Pad, it\&apos;s in the notification bar at the top of the screen.</string>
+    <string name="float_pad_help_05">There are two notifications, one to show it is running and another one to make it show again.\nClick the latter one to restore the Float Pad.</string>
+    <string name="float_pad_help_06">You can itinerate through the AB&amp;BM list.\nIf \&quot;Float Pad\&quot; takes the focus, Bluetooth events cannot be processed. Touch backgroud task to take the focus from it.</string>
+    <string name="list_traverse_help_01">Using Prev, Pause/Play, Next buttons, you can traverse inside the AB&amp;BM list and play.(Audio only)</string>
+    <string name="release_note_help_00">You can check the release note or new features of this release.</string>
+    <string name="release_note_help_01">Click MENU in \&quot;Help\&quot; list display and select \&quot;Release Note\&quot;.</string>
+    <string name="release_note_help_02">You can see the Release Note or New Features.</string>
+    <string name="release_note_help_03">Or click the button below.</string>
+    <string name="sleep_timer_help_00">This app is compatible with most timer apps, but you can use this built-in sleep timer. Two preset buttons are customizable. Fade out not implemented yet.</string>
+    <string name="sleep_timer_help_01">Select \&quot;Sleep Timer\&quot; from \&quot;Others\&quot; in the Menu of playback screen.</string>
+    <string name="sleep_timer_help_02">Select the Time of Day you want to go to sleep. Two preset buttons help you. In default settings, the left button sets the time 30 min from now and the right 60 min from now.</string>
+    <string name="sleep_timer_help_03">In this example, if you push the left button, it sets the time to 08:04, because it\&apos;s 07:34 now.</string>
+    <string name="sleep_timer_help_04">Start the timer by clicking the \&quot;Set\&quot; button. You\&apos;ll see the time left in secs. Stop and clear the timer by clicking the \&quot;Clear\&quot; button.</string>
+    <string name="sleep_timer_help_05">You can modify preset buttons by long clicking them. There are two modes.</string>
+    <string name="sleep_timer_help_06">In \&quot;After\&quot; mode, you can set the time interval between the sleep time and the current time. </string>
+    <string name="sleep_timer_help_07">In \&quot;At\&quot; mode, you can set the timer to the time of day when you want to turn off the player.</string>
+    <string name="ringdroid_help_01">There are two ways to export AB part sound. Select \&quot;Export AB as Sound\&quot; from the Menu in Playback screen.</string>
+    <string name="ringdroid_help_02">The second way is to select \&quot;Export AB as Sound\&quot; from the context menu of an item in the AB&amp;BM list.</string>
+    <string name="ringdroid_help_03">Now you see the sound edit screen. The AB part should be already selected.</string>
+    <string name="ringdroid_help_04">If you want to save the selected part, select \&quot;Save\&quot; from the Menu.</string>
+    <string name="ringdroid_help_05">In the \&quot;Save\&quot; dialog, you can change the type of sound, and the name of the saved file. In the actual file name, all the non-alphanumeric characters will be deleted.</string>
+    <string name="ringdroid_help_06">You can save it as a Music, Alert, Notification, Ringtone or Ankidroid sound. In the case of Ankidroid, the filename will be stored in the clipboard.</string>
+    <string name="search_help_one">Push Menu while in Artist, Album, Song, Playlist view. Select Search.</string>
+    <string name="search_help_two">Type keywords using the softkeyboard appeared. It displays matched contents in each category immediately.</string>
+    <string name="search_help_three">If you want to search for all the categories, use Google seach box and select AB Repeat player.</string>
+    <string name="search_help_four">Search function for separate categories existed from the first release, but it was not available for devices which doesn\&apos;t have search buttons. This newly added Search item in the menu enable all users access to this function.</string>
+    <string name="feedback_please">Please submit questions or requests at\n http://learnerstechlab.com/support/ \nPlease avoid Android Play Review page for supports and requests. It\&apos;s very hard to support without bi-directional communications.</string>
+    <string name="user_guide_here">User Guide and more info at\n http://learnerstechlab.com/ab_guide/</string>
+    
+    <!-- Floating Window related -->
+    <string name="window_icon">Window icon</string>
+    <string name="hide">Hide</string>
+    <string name="close">Close</string>
+    <string name="corner">Corner</string>
+    
+    <!-- Title for error alert when a video cannot be played.  it can be used by any app. -->
+    <string name="VideoView_error_title">Cannot play video</string>
+    <!-- Text for error alert when a video container is not valid for progressive download/playback. -->
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
+    <!-- Text for error alert when a video cannot be played. it can be used by any app. -->
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <!-- Button to close error alert when a video cannot be played -->
+    <string name="VideoView_error_button">OK</string>
+    
+    <string name="movieviewlabel">AB Repeat Video Player</string>
+    <!-- shown in the video player view while the video is being loaded, before it starts playing -->
+    <!-- shown in the video player view while the video is being loaded, before it starts playing -->
+    <string name="loading_video">Loading video\u2026</string>
+    
+    <!-- Movie View Resume Playing dialog title -->
+    <string name="resume_playing_title">Resume video</string>
+	<!-- Movie View Start Playing dialog title -->
+    <string name="resume_playing_message">Resume playing from <xliff:g id="duration" example="5:30">%s</xliff:g> ?</string>
+	<!-- Movie View Start Playing button "Resume from bookmark" -->
+    <string name="resume_playing_resume">Resume playing</string>
+    <!-- Movie View Start Playing button "Beginning" -->
+    <string name="resume_playing_restart">Start over</string>
+    
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <string name="details_ms"><xliff:g id="minutes">%1$02d</xliff:g>:<xliff:g id="seconds">%2$02d</xliff:g></string>
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <string name="details_hms"><xliff:g id="hours">%1$d</xliff:g>:<xliff:g id="minutes">%2$02d</xliff:g>:<xliff:g id="seconds">%3$02d</xliff:g></string>
+    
+</resources>
+

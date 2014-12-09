@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/ab_help_interval_ab_sub"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="top"
+        android:visibility="visible" />
+        
+   <LinearLayout
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="top"
+    android:layout_weight="1">
+   
+	   <ImageView 
+	   		android:src="@drawable/interval_ab_help_one"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="6dip"
+	        android:layout_marginRight="6dip" /> 
+	        
+	   <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="8dip"
+	        android:text="@string/interval_ab_help_one"
+	        android:gravity="top"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:visibility="visible" />
+        
+   </LinearLayout>
+   
+   <LinearLayout
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="top"
+    android:layout_weight="1">
+   
+	   <ImageView 
+	   		android:src="@drawable/interval_ab_help_two"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="6dip"
+	        android:layout_marginRight="6dip" /> 
+	        
+	   <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="8dip"
+	        android:text="@string/interval_ab_help_two"
+	        android:gravity="top"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:visibility="visible" />
+        
+   </LinearLayout>
+   
+   <LinearLayout
+   	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="top"
+    android:layout_weight="1">
+   
+	   <ImageView 
+	   		android:src="@drawable/adjust_ab_help_four"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="6dip"
+	        android:layout_marginRight="6dip" /> 
+	        
+	   <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="8dip"
+	        android:text="@string/interval_ab_help_three"
+	        android:gravity="top"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:visibility="visible" />
+        
+   </LinearLayout>
+   
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/feedback_please"
+        android:autoLink="all"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="top"
+        android:visibility="visible" />
+        
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/user_guide_here"
+        android:autoLink="all"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="top"
+        android:visibility="visible" />
+
+</LinearLayout>
+</ScrollView>

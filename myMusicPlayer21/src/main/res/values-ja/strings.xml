@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="onesong" msgid="8336826100414159413">"曲（1）"</string>
+  <plurals name="Nsongs">
+    <item quantity="other" msgid="5798230388116542981">"曲（<xliff:g id="COUNT">%d</xliff:g>）"</item>
+  </plurals>
+  <plurals name="Nsongscomp">
+    <item quantity="other" msgid="7162294486622945550">"<xliff:g id="TOTAL_COUNT">%1$d</xliff:g>曲中<xliff:g id="COUNT_FOR_ARTIST">%2$d</xliff:g>曲"</item>
+  </plurals>
+  <plurals name="Nalbums">
+    <item quantity="one" msgid="3798955510439465932">"アルバム（1）"</item>
+    <item quantity="other" msgid="3047615499770811984">"アルバム（<xliff:g id="COUNT">%d</xliff:g>）"</item>
+  </plurals>
+    <string name="goto_start" msgid="8979658707407220934">"ライブラリ"</string>
+    <string name="goto_playback" msgid="4885216161312176550">"再生"</string>
+    <string name="party_shuffle" msgid="8213359225506006168">"パーティシャッフル"</string>
+    <string name="party_shuffle_off" msgid="1828744483354711679">"パーティシャッフルOFF"</string>
+    <string name="delete_item" msgid="3363330144534750601">"削除"</string>
+    <string name="shuffle_all" msgid="1388193611787878773">"すべてシャッフル"</string>
+    <string name="play_all" msgid="6309622568869321842">"すべて再生"</string>
+    <string name="delete_artist_desc" msgid="1843750591006508005">"<xliff:g id="ARTIST">%s</xliff:g>の全曲をSDカードから完全に削除します。"</string>
+    <string name="delete_album_desc" msgid="535515999268177079">"アルバム「<xliff:g id="ALBUM">%s</xliff:g>」全体をSDカードから完全に削除します。"</string>
+    <string name="delete_song_desc" msgid="1856800468541831408">"「<xliff:g id="SONG">%s</xliff:g>」をSDカードから完全に削除します。"</string>
+    <string name="delete_confirm_button_text" msgid="7008121194944357274">"OK"</string>
+  <plurals name="NNNtracksdeleted">
+    <item quantity="one" msgid="8560276109508404217">"1曲削除しました。"</item>
+    <item quantity="other" msgid="5156740163031225200">"<xliff:g id="SONGS_TO_DELETE">%d</xliff:g>曲削除しました。"</item>
+  </plurals>
+    <string name="scanning" msgid="3529383847223198502">"SDカードをスキャン中..."</string>
+    <string name="nowplaying_title" msgid="8342523844307751761">"再生中"</string>
+    <string name="partyshuffle_title" msgid="6582413231529992125">"パーティシャッフル"</string>
+    <string name="artists_title" msgid="8490372367259160067">"アーティスト"</string>
+    <string name="albums_menu" msgid="5807982055590211900">"アルバム"</string>
+    <string name="albums_title" msgid="8773880394961378035">"アルバム"</string>
+    <string name="tracks_menu" msgid="6942246568246092330">"曲"</string>
+    <string name="tracks_title" msgid="3229389424532295124">"曲"</string>
+    <string name="playlists_menu" msgid="5382792649771928849">"プレイリスト"</string>
+    <string name="playlists_title" msgid="5094238486322957927">"プレイリスト"</string>
+    <string name="videos_title" msgid="2066741954354129115">"動画"</string>
+    <string name="all_title" msgid="6880186414437237653">"すべてのメディア"</string>
+    <string name="browse_menu" msgid="5248122473075843289">"アーティスト"</string>
+    <string name="search_title" msgid="1016971653383739344">"検索"</string>
+    <string name="no_tracks_title" msgid="8805805388271238471">"曲がありません"</string>
+    <string name="no_videos_title" msgid="6218814130364793104">"動画がありません"</string>
+    <string name="no_playlists_title" msgid="4456351945617594418">"プレイリストがありません"</string>
+    <string name="delete_playlist_menu" msgid="8998637685583495247">"削除"</string>
+    <string name="edit_playlist_menu" msgid="571618502105370684">"編集"</string>
+    <string name="rename_playlist_menu" msgid="3133463747389494668">"名前を変更"</string>
+    <string name="export_ab_sound">ABサウンドエクスポート</string>
+    <string name="ab_settings">ABパラメータ設定</string>
+    <string name="playlist_deleted_message" msgid="9008053828193961455">"プレイリストを削除しました。"</string>
+    <string name="playlist_renamed_message" msgid="7187580192703005990">"プレイリストの名前を変更しました。"</string>
+    <string name="recentlyadded" msgid="110978416756366953">"最近追加したアイテム"</string>
+    <string name="recentlyadded_title" msgid="3153322287249901914">"最近追加したアイテム"</string>
+    <string name="podcasts_listitem" msgid="8657809279717670634">"ポッドキャスト"</string>
+    <string name="podcasts_title" msgid="4928414142496858304">"ポッドキャスト"</string>
+    <string name="sdcard_missing_title" msgid="9008284946643270850">"SDカードがありません"</string>
+    <string name="sdcard_missing_message" msgid="1169260755336159747">"SDカードが携帯電話に挿入されていません。"</string>
+    <string name="sdcard_busy_title" msgid="1162763571147174655">"SDカードを使用できません"</string>
+    <string name="sdcard_busy_message" msgid="8071868348072728830">"このSDカードは別の端末で使用中です。"</string>
+    <string name="sdcard_error_title" msgid="165682155008600643">"SDカードエラー"</string>
+    <string name="sdcard_error_message" msgid="4574563894036627855">"SDカードでエラーが発生しました。"</string>
+    <string name="unknown_artist_name" msgid="5567811106415855219">"不明なアーティスト"</string>
+    <string name="unknown_album_name" msgid="8525145988941244727">"不明なアルバム"</string>
+    <string name="shuffle_on_notif" msgid="5453708337808483943">"シャッフルをONにしました。"</string>
+    <string name="shuffle_off_notif" msgid="4251189610017886263">"シャッフルをOFFにしました。"</string>
+    <string name="repeat_off_notif" msgid="1149406899083479716">"繰り返しをOFFにしました。"</string>
+    <string name="repeat_current_notif" msgid="1227153936360904196">"現在の曲を繰り返し再生します。"</string>
+    <string name="repeat_all_notif" msgid="6443293055987316642">"全曲繰り返しで再生します。"</string>
+    <string name="ringtone_menu" msgid="2737472190159134599">"着信音に設定"</string>
+    <string name="ringtone_menu_short" msgid="3367622038867238133">"着信音に設定"</string>
+    <string name="ringtone_set" msgid="5325818347613843130">"「<xliff:g id="NAME">%s</xliff:g>」を着信音に設定しました。"</string>
+    <string name="play_selection" msgid="2854921021814550018">"再生"</string>
+    <string name="add_to_playlist" msgid="7110273488645072783">"プレイリストに追加"</string>
+    <string name="queue" msgid="2937629819482787704">"現在のプレイリスト"</string>
+    <string name="new_playlist" msgid="7588112979692632867">"新規"</string>
+    <string name="new_playlist_name_template" msgid="905710296728900597">"新規プレイリスト<xliff:g id="NUMBER">%d</xliff:g>"</string>
+  <plurals name="NNNtrackstoplaylist">
+    <item quantity="one" msgid="422388042993582235">"プレイリストに1曲追加しました。"</item>
+    <item quantity="other" msgid="7662771987109627255">"プレイリストに<xliff:g id="NUMBER">%d</xliff:g>曲が追加されました。"</item>
+  </plurals>
+    <string name="emptyplaylist" msgid="6711555673997896344">"選択したプレイリストは空です。"</string>
+        <string name="startendtooclose">"A点B点が近すぎます。"</string>
+    <string name="create_playlist_create_text" msgid="8149755205483279143">"保存"</string>
+    <string name="create_playlist_overwrite_text" msgid="2007808383561024706">"上書き保存"</string>
+    <string name="service_start_error_title" msgid="8649916852210198813">"再生エラー"</string>
+    <string name="service_start_error_msg" msgid="3880338547260838681">"再生できません。"</string>
+    <string name="service_start_error_button" msgid="480888406592240723">"OK"</string>
+  <string-array name="weeklist">
+    <item msgid="7005918873419323862">"1週間"</item>
+    <item msgid="7487749116155425822">"2週間"</item>
+    <item msgid="1565338360539555185">"3週間"</item>
+    <item msgid="2142986059836933072">"4週間"</item>
+    <item msgid="4332403875260507291">"5週間"</item>
+    <item msgid="3847281907869868565">"6週間"</item>
+    <item msgid="2942654998558867799">"7週間"</item>
+    <item msgid="2115529325850052227">"8週間"</item>
+    <item msgid="1396675336665198092">"9週間"</item>
+    <item msgid="3178819129208998649">"10週間"</item>
+    <item msgid="2727959579637914171">"11週間"</item>
+    <item msgid="8708754966127584739">"12週間"</item>
+  </string-array>
+    <string name="weekpicker_set" msgid="7636608790418067496">"完了"</string>
+    <string name="weekpicker_title" msgid="699535378922101701">"期間の設定"</string>
+    <string name="save_as_playlist" msgid="5180413608901885255">"プレイリストとして保存"</string>
+    <string name="clear_playlist" msgid="4565515100924905315">"プレイリストを消去"</string>
+    <string name="musicshortcutlabel" msgid="2602980193508150226">"ミュージックプレイリスト"</string>
+    <string name="playback_failed" msgid="4477832192645009774">"プレーヤーが対応していない音声ファイル形式です。"</string>
+    <string name="cancel" msgid="886559484711947520">"キャンセル"</string>
+    <string name="remove_from_playlist" msgid="2548577514849026354">"プレイリストから削除"</string>
+    <string name="streamloadingtext" msgid="3367150884806639224">"<xliff:g id="HOST">%s</xliff:g>に接続中"</string>
+    <string name="mediasearch" msgid="959222971261132292">"<xliff:g id="TERM">%s</xliff:g>の検索:"</string>
+    <string name="working_artists" msgid="8678357432732156580">"アーティスト..."</string>
+    <string name="working_albums" msgid="8713273699401457426">"アルバム..."</string>
+    <string name="working_songs" msgid="2201491972050410684">"曲..."</string>
+    <string name="working_playlists" msgid="4424950806134653351">"再生リスト..."</string>
+    <string name="loading" msgid="3267924133697717662">"読み込み中"</string>
+    <string name="sort_by_track" msgid="7662999005554152565">"トラック"</string>
+    <string name="sort_by_album" msgid="2912837715658975248">"アルバム"</string>
+    <string name="sort_by_artist" msgid="4607024967813199992">"アーティスト"</string>
+    <string name="music_picker_title" msgid="1561623486324013570">"音楽トラックを選択"</string>
+    <string name="gadget_track" msgid="3186569295893300114">"トラック<xliff:g id="TRACK_NUMBER">%d</xliff:g>"</string>
+    <string name="fail_to_start_stream" msgid="3605390187703912835">"要求されたストリームを再生できませんでした。"</string>
+    <string name="search_settings_description" msgid="6520975349259883368">"アーティスト、アルバム、トラック"</string>
+    <string name="search_hint" msgid="3766854898072633001">"音楽を検索"</string>
+    <string name="fast_scroll_alphabet" msgid="5548732936480723311">" ABCDEFGHIJKLMNOPQRSTUVWXYZ"</string>
+    <string name="widget_initial_text" msgid="6334545155963910952">"タップで曲を選択します"</string>
+    
+    <string name="quit">閉じる</string>
+    <string name="running">作動中</string>
+    <string name="hidden">非表示中</string>
+    <string name="click_to_restore">クリックして表示</string>
+    <!-- Text shown on menu to adjust A point -->
+    <string name="adjust_apoint">A点調節</string>
+    <!-- Text shown on menu to adjust B point -->
+    <string name="adjust_bpoint">B点調節</string>
+    <!-- Text shown on menu to record AB points -->
+    <string name="record_abpoints">AB点保存</string>
+    <!-- Text shown on menu to browse AP points -->
+    <string name="browse_abpoints">AB点リスト</string>
+    <!-- Text shown on submenu to forward A or B point 2000msec -->
+    <string name="forward_2000msec">前方へ  2.0秒　 > > ></string>
+    <!-- Text shown on submenu to forward A or B point 1000msec -->
+    <string name="forward_1000msec">前方へ  1.0秒 　> ></string>
+    <!-- Text shown on submenu to forward A or B point 200msec -->
+    <string name="forward_200msec">前方へ  0.2秒　></string>
+    <!-- Text shown on submenu to forward A or B point 200msec -->
+    <string name="backward_200msec">後方へ  0.2秒 　&lt;</string>
+    <!-- Text shown on submenu to forward A or B point 1000msec -->
+    <string name="backward_1000msec">後方へ  1.0秒 　&lt; &lt;</string>
+    <!-- Text shown on submenu to forward A or B point 2000msec -->
+    <string name="backward_2000msec">後方へ  2.0秒 　&lt; &lt; &lt;</string>
+    <string name="abpos_deleted_message">"ABまたはBMを削除しました。"</string>
+    <string name="abpos_renamed_message">"ABまたはBMの名前を変更しました。"</string>
+    <string name="abpos_recorded">"AB点を記録しました。"</string>
+    <string name="abpos_cleared">"AB点がクリアされました。".</string>
+    <string name="abmode_set">ABリピートモード</string>
+    <string name="abmode_not_set">ABリピートモードに入れません</string>
+    <string name="one_sec">1秒</string>
+    <string name="sub_sec">0.1秒</string>
+    <string name="are_you_sure">実行しますか？</string>
+    <string name="ab_delete_listed">表示中AB,BMの消去</string>
+    <string name="ab_delete_database">AB,BMデータベースの消去</string>
+    <string name="db_on_sd_failed">SD-Card上にデータベースを作成またはコピー出来ませんでした。</string>
+    <string name="ab_db_backup">バックアップ AB &amp; BM Database.</string>
+    <string name="ab_db_restore">リストア AB &amp; BM Database.</string>
+    <string name="ab_db_backupped_message">AB &amp; BM Database バックアップされました</string>
+    <string name="ab_db_restored_message">AB &amp; BM Database リストアされました</string>
+    <string name="abpos_order">表示順序</string>
+    <string name="abpos_order_creation_normal">作成　正順</string>
+    <string name="abpos_order_creation_reverse">作成　逆順</string>
+    <string name="abpos_order_apos_normal">A点　正順</string>
+    <string name="abpos_order_apos_reverse">A点　逆順</string>
+    <string name="abpos_order_name_normal">名称　正順</string>
+    <string name="abpos_order_name_reverse">名称　逆順</string>
+    <string name="ab_adjustable_bm_on">可変BM ON</string>
+    <string name="ab_adjustable_bm_off">可変BM OFF</string>
+    <string name="abpos_only_one_window">Windowは一つ以上表示できません。</string>
+    <string name="bookmark_recorded">ブックマークが記録されました。</string>
+    <string name="same_ab_exists">同じAB点があります</string>
+    <string name="want_to_continue">継続して追加しますか？</string>
+    
+    <string name="ab_prefs">AB操作設定</string>
+    <string name="ab_prefs_title">AB Repeat操作設定</string>
+    <string name="ab_prefs_summary">AB Repeat動作設定</string>
+    <string name="mode_switch_wclick_main_title">モード変更ダブルクリック</string>
+    <string name="mode_switch_wclick_main_summary">メインの操作ボタンで</string>
+    <string name="mode_switch_wclick_bt_title">モード変更ダブルクリック</string>
+    <string name="mode_switch_wclick_bt_summary">Bluetoohボタンで</string>
+    <string name="ask_if_duplicated_title">AB重複確認</string>
+    <string name="ask_if_duplicated_summary">同じABが記録されていたら、重複するか確認</string>
+    <string name="ask_if_overwrite_title">AB上書き確認</string>
+    <string name="ask_if_overwrite_summary">記録されたABを変更して記録しようとしたら、上書きするか確認</string>
+    <string name="prev_behaviour_old_title">Prevボタンの古い振る舞い</string>
+    <string name="prev_behaviour_old_summary">ABリピート中にPrevボタンをダブルクリックすると前の曲に飛ぶ</string>
+    <string name="ab_edited">AB点が編集されてます</string>
+    <string name="ab_update_or_new">更新しますか？新規作成しますか？</string>
+    <string name="ab_update">更新</string>
+    <string name="ab_new">新規</string>
+    <string name="abpos_updated">AB点を更新しました</string>
+    
+    <string name="release_note">リリースノート</string>
+    <string name="new_features">AB Repeat 3.7.5 変更点</string>
+    <string name="new_features_01">1. Check Modeは設定すると覚えています。毎回、設定する必要がありません。(Video/Audio)</string>
+    <string name="new_features_02">2. AB点を記録する時、既に同じものが記録されていれば、記録を実行するか確認します。同様に、AB点を選んだ後、あるいは記録した後に編集した場合、上書きするか、新規に作成するか確認します。(Video/Audio)</string>
+    <string name="new_features_03">3. 通常のABリピート時に、Prevボタンのダブルクリックは、AB点をクリアせず、単にA点にジャンプします。(Audio/Video)</string>
+    <string name="new_features_04">4. 2.と3.に関し、以前の振る舞いに戻したい場合、再生画面のメニューでAB設定をその他から選んで、設定できます。</string>
+    <string name="new_features_05">5. ビデオのスロー再生が出来ます。（音質は悪いのであしからず）</string>
+    <string name="new_features_donation">* 寄付、または励ましのコメント・評価を宜しくお願いします。既に御寄附いただいた方々に感謝！</string>
+    <string name="new_features_button_01">AB Repeat操作設定</string>
+    <string name="new_features_button_02">AB&amp;BMリストプレイユーザーガイド</string>
+    <string name="new_features_button_03">Bluetoothユーザーガイド</string>
+    <string name="new_features_button_04">入門編YouTubeビデオ</string>
+    <string name="new_features_button_05">入門編YouTubeビデオ</string>
+    <string name="welcome">Welcome to AB Repeat Player</string>
+    <string name="welcome_01">ユーザガイドはアプリ内でも参照できます。\n再生画面でMENUボタンをクリックし、「ヘルプ」を選んでください。または、下のボタンをクリック。\nユーザガイドはネット上でも参照できます。</string>
+    <string name="welcome_button_01">AB Repeat Playerユーザーガイド</string>
+    <string name="welcome_button_02">入門編YouTubeビデオ</string>
+    <string name="introduction_video_url">http://www.youtube.com/watch?v=yrIEaTdN3nk</string>
+    <string name="donation_title">寄付</string>
+    <string name="comment_title">コメントと評価</string>
+    <string name="ab_help_menu">ヘルプ</string>
+    <string name="ab_help_ab_sub">ABリピート</string>
+    <string name="ab_help_adjust_ab_sub">AB点の調節</string>
+    <string name="ab_help_interval_ab_sub">ABリピート間の休止間隔</string>
+    <string name="ab_help_jump_sub">ジャンプ</string>
+    <string name="ab_help_bookmark_sub">ブックマーク</string>
+    <string name="ab_help_list_traverse_sub">AB&amp;BMリスト内をプレイ</string>
+    <string name="ab_help_manage_sub">AB&amp;BMリストの管理</string>
+    <string name="ab_help_lyric_sub">歌詞の表示</string>
+    <string name="ab_help_migration_sub">スマホ間のデータの移行</string>
+    <string name="ab_help_float_pad_sub">Float Pad</string>
+    <string name="ab_help_bluetooth_sub">Bluetoothによる制御</string>
+    <string name="ab_help_ringdroid_sub">ABサウンドエクスポート</string>
+    <string name="ab_donation">寄付</string>
+    <string name="ab_float_pad">Float Pad</string>
+    <string name="sleep_timer">スリープタイマー</string>
+    <string name="lyric">歌詞</string>
+    <string name="lyric_options">歌詞オプション</string>
+    <string name="lyric_options_auto">自動: 埋め込みタグ &gt;&gt; musixmatch</string>
+    <string name="lyric_options_id3tag">埋め込みタグ</string>
+    <string name="lyric_options_musix">musixmatch</string>
+    <string name="not_mp3">Mp3の「Id3v2 USLT Tag」のみサポート</string>
+    <string name="no_id3tag">Mp3の「Id3v2 USLT Tag」が見つかりません。</string>
+    <string name="empty">(空)</string>
+    <string name="clear">解除</string>
+    <string name="set">設定</string>
+    <string name="current_timer">現在のタイマー</string>
+    <string name="no_timer_set">タイマーはセットされていません</string>
+    <string name="font_enlarge">フォント拡大</string>
+    <string name="font_shrink">フォント縮小</string>
+    <string name="bookmark_help_one">クリックしてブックマークを定義</string>
+    <string name="bookmark_help_two">クリックしてブックマークを保存</string>
+    <string name="bookmark_help_three">クリックしてブックマークを保存せずにキャンセル</string>
+    <string name="bookmark_help_four">長押しでブックマークとAB点のリストへ</string>
+    <string name="bookmark_help_five">ブックマークを選択して、そこから演奏再開</string>
+    <string name="abrepeat_help_one">クリックしてA点設定。ボタンが変化します</string>
+    <string name="abrepeat_help_two">クリックしてB点設定、ABリピート開始。ボタンが変化</string>
+    <string name="abrepeat_help_three">クリックしてABリピートを解消。ボタンが変化</string>
+    <string name="abrepeat_help_four">クリックしてAB点を保存、長押しでリスト</string>
+    <string name="abrepeat_help_five">クリックして保存されたAB点を選択</string>
+    <string name="bookmark_help_six">クリックしてブックマークへジャンプ。長押しでブックマークの位置の調整。</string>
+    <string name="bookmark_help_seven">リストのメニュー。もし、可変ブックマークがOFF(初期設定)なら、ブックマークの位置へジャンプするだけ。もし、ONなら、ブックマーク調整（B点設定）状態になるので、リストに戻ることなく何度でもブックマークを使用可。</string>
+    <string name="jump_help_one">ジャンプボタンをクリックして指定の秒数を巻き戻しジャンプ</string>
+    <string name="jump_help_two">ジャンプボタンを長押ししてジャンプしたい秒数と方向を編集。0.0秒から99.9秒まで指定可</string>
+    <string name="manage_help_one">エントリを長押しして編集</string>
+    <string name="manage_help_two">削除、名称変更が可能</string>
+    <string name="manage_help_three">メニューから、この曲のエントリーを削除、または全てを削除可能。また、データベースのバックアップ・リストアが可能。表示の順序の変更可。</string>
+    <string name="manage_help_four">６個のオプションのなかから選択。オーディオ・ビデオの全てのコンテンツ。</string>
+    <string name="adjust_ab_help_one">クリックしてA点またはB点を調整</string>
+    <string name="adjust_ab_help_two">クリックしてA点またはB点を前後にシフト</string>
+    <string name="adjust_ab_help_three">Checkモードを設定すれば、シフトボタンクリックの結果を即座に確認可能。終わったらOKをクリック</string>
+    <string name="adjust_ab_help_four">シフトボタンを長押しすれば、シフトの距離を編集可能</string>
+    <string name="interval_ab_help_one">クリックしてA点を調整</string>
+    <string name="interval_ab_help_two">間隔（ポーズ）ボタンをクリック。チェックモードではできません。</string>
+    <string name="interval_ab_help_three">ABリピート間の間隔を設定。</string>
+    <string name="lyric_help_01">プレイ中に「メニュー」ボタンを押してください。そして、「その他」をクリックしてください。</string>
+    <string name="lyric_help_02">「歌詞」をクリックしてください。</string>
+    <string name="lyric_help_03">正しく埋め込まれていれば、その曲の歌詞が表示されます。</string>
+    <string name="lyric_help_04">現在、MP3のUSLT Id3v2の歌詞しかサポートされていません。 iTunesなど多くのツールでMP3のファイルに歌詞を埋め込むことができます。もし、歌詞が表示されない場合、iTunesの「ID3タグ変換」機能でv2.4に変換してみてください。</string>
+    <string name="lyric_help_05">テキストをピンチ、スプレッドして、フォントサイズを変更。</string>
+    <string name="lyric_help_06">テキストを選択、コピーなども可能。</string>
+    <string name="migration_help_01">１．曲を新しいスマホの同じ場所にコピーする。</string>
+    <string name="migration_help_02">２．古いスマホのデータベース（\\sdcard\\com.learnerstech\\abrepeat\\abrepeat）を新しいスマホの同じ場所にコピーする。</string>
+    <string name="migration_help_03">３．もし、どちらかのスマホのAB　Repeat Playerが5.3.2より古い場合はアップデートし、AB&amp;BMリスト画面に行ってください。正しい場所にデータバースが作成あるいはコピーされます。</string>
+    <string name="bluetooth_help_01">Prev, Pause/Play, Nextボタンを使用して、AB&amp;BMリスト内を移動し、プレイすることが出来ます。(Audioのみ)</string>
+    <string name="bluetooth_help_02">Mode間の切り替えは、一部のBluetooth機器では動作しない可能性があります。開発にレポートしてください。もし、長押しか、Stopが利用できる場合は、Double Clickは使用しないでください。３つのコマンド、Pause-Switch-Playを発生します。「Float Pad」がフォーカスを持っている時は、Bluetoothのイベントは届きません。後のタスクを触って、フォーカスを奪ってください。</string>
+    <string name="bluetooth_help_alert_01">AB&amp;BM Mode設定音</string>
+    <string name="bluetooth_help_alert_02">NORMAL Mode設定音</string>
+    <string name="float_pad_help_00">他の全てのアプリの上に浮く制御ボタンのPadを起動できます。ウェブブラウザー、PDFリーダー、歌詞リーダーなどの上で使用できます。\n現在の制限事項：現在位置の表示、プログレスバー、FFとREW機能がありません。また、ジャンプの距離の設定変更はFloat Padからはできませんが、従前通り、通常画面から可能です。</string>
+    <string name="float_pad_help_01">再生画面のメニューから、 「Float Pad」を選択してください。 </string>
+    <string name="float_pad_help_02">透明で他のアプリの上に浮かぶ制御パッドが出来ているはずです。\nもし、下にあるアプリを操作したい場合は、それをタッチしてフォーカスがそちらに移っていることを確認してください。\nもし、「Float Pad」にフォーカスしている場合は、総てのコマンドがそちらに向かってしまいます。 </string>
+    <string name="float_pad_help_03">「Float Pad」を干渉することなく、自由に他のアプリを立ち上げたり、停止することが出来ます。「隠す」または「最小化」ボタンや「閉じる」ボタンを他のウィンドウシステムのように使用することができます。</string>
+    <string name="float_pad_help_04">「Float Pad」を隠している場合、それは、画面上方にあるノティフィケーションバーの中にあります。</string>
+    <string name="float_pad_help_05">「Float Pad」が動作中であることを示すノティフィケーションと再表示のためのノティフィケーションの２つがあります。\n後者をクリックして、「Float Pad」を再表示してください。</string>
+    <string name="float_pad_help_06">AB&amp;BMリスト内を周回することが可能です。\n「Float Pad」がフォーカスを持っている時は、Bluetoothのイベントは届きません。後のタスクを触って、フォーカスを奪ってください。</string>
+    <string name="list_traverse_help_01">Prev, Pause/Play, Nextボタンを使用して、AB&amp;BMリスト内を移動し、プレイすることが出来ます。(Audioのみ)</string>
+    <string name="release_note_help_00">このリリースの新機能、リリースノートをチェックできます。</string>
+    <string name="release_note_help_01">「ヘルプ」リスト表示で、MENUをクリックし、「リリースノート」を選択してください。</string>
+    <string name="release_note_help_02">リリースノート、新機能が表示されます。</string>
+    <string name="release_note_help_03">または、下のボタンをクリックしてください。</string>
+    <string name="sleep_timer_help_00">このアプリは殆どのタイマーアプリと互換ですが、この内蔵スリープタイマーも御利用いただけます。二つのプリセットボタンはカスタマイズ可能です。フェイドアウトは、まだ実装してません。</string>
+    <string name="sleep_timer_help_01">演奏画面のメニューの「その他」から、「スリープタイマー」を選択してください。</string>
+    <string name="sleep_timer_help_02">就寝予定時間を設定してください。二つのプリセットボタンが設定の手助けをします。初期設定では、左のボタンが、現在から３０分後、右が６０分後の時刻に設定してくれます。</string>
+    <string name="sleep_timer_help_03">この例では、左のボタンを押すと、現在時刻が07:34なので、08:04に設定されます。</string>
+    <string name="sleep_timer_help_04">「設定」ボタンを押して、タイマーをスタートしてください。残り時間が秒単位まで表示されます。「解除」ボタンを押して、タイマーを停止解除してください。</string>
+    <string name="sleep_timer_help_05">プリセットボタンを、長押しすれば、それぞれをカスタマイズできます。プリセットは、２種類用意されています。</string>
+    <string name="sleep_timer_help_06">「After」モードは、現在時間と睡眠予定時間の間の時間を設定することが出来ます。</string>
+    <string name="sleep_timer_help_07">「At」モードは、プレイヤーを止めたい時刻を指定出来ます。 </string>
+    <string name="ringdroid_help_01">AB点間の音声をエクスポートする機能の起動には2通りあります。再生画面で、メニューから、「ABサウンドエクスポート」を選択してください。</string>
+    <string name="ringdroid_help_02">もう一つの方法は、AB&amp;BMリストのコンテキストメニューから、「ABサウンドエクスポート」を選択してください。</string>
+    <string name="ringdroid_help_03">これで、音声編集画面を起動できます。AB点間部分は既に選択されているはずです。</string>
+    <string name="ringdroid_help_04">選択部分を保存するには、メニューから、「Save」を選択してください。 </string>
+    <string name="ringdroid_help_05">「Save」ダイアログでは、保存ファイルのタイプとファイル名を変更できます。実際のファイル名ではアルファベットと数字以外の文字は削除されています。</string>
+    <string name="ringdroid_help_06">Music, Alert, Notification, RingtoneまたはAnkidroidの音声として保存できます。Ankidroidの場合は、ファイル名がクリップボードに保存されますので、簡単にフラッシュカードに張り付けることができます。</string>
+    <string name="search_help_one">アーチスト、アルバム、曲、プレイリストのリスト表示画面でメニューボタンを押してください。検索を選択してください。</string>
+    <string name="search_help_two">ソフトキーボードが表れるので、検索キーワードを入力してください。各カテゴリーでの検索結果が即座に表示されます。</string>
+    <string name="search_help_three">もし、総てのカテゴリーで検索したい場合は、Google検索でAB Repeat Playerを選択してください。</string>
+    <string name="search_help_four">カテゴリー毎の検索機能は最初のリリースから存在していましたが、検索ボタンを持たない機種では使えませんでした。メニューに検索を追加することで、全てのユーザが使用できるようになりました。</string>
+    <string name="feedback_please">質問、リクエストをお待ちしてます。\n http://learnerstechlab.com/support/ \nサポートやリクエストにGoogle PlayのReviewを使用することは、なるべく避けてください。双方向のコミュニケーション無しでのサポートは大変難しくなります。</string>
+    <string name="user_guide_here">ユーザーガイドや詳しい情報は、\n  http://learnerstechlab.com/ab_guide/</string>
+</resources>

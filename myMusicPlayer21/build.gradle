@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 10
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.kojimahome.music21"
+        minSdkVersion 11
+        targetSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':ringDroid')
+}

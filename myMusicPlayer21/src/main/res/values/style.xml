@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MediaButton">
+        <item name="android:background">@drawable/media_button_background</item>
+        <item name="android:layout_width">71dip</item>
+        <item name="android:layout_height">52dip</item>
+    </style>
+
+    <style name="MediaButton.Previous">
+        <item name="android:src">@android:drawable/ic_media_previous</item>
+    </style>
+
+    <style name="MediaButton.Next">
+        <item name="android:src">@android:drawable/ic_media_next</item>
+    </style>
+
+    <style name="MediaButton.Play">
+        <item name="android:src">@android:drawable/ic_media_play</item>
+    </style>
+
+    <style name="MediaButton.Ffwd">
+        <item name="android:src">@android:drawable/ic_media_ff</item>
+    </style>
+
+    <style name="MediaButton.Rew">
+        <item name="android:src">@android:drawable/ic_media_rew</item>
+    </style>
+
+    <style name="MediaButton.Pause">
+        <item name="android:src">@android:drawable/ic_media_pause</item>
+    </style>
+
+    <style name="TrButton">
+        <item name="android:background">@drawable/tr_button_background</item>
+        <item name="android:layout_width">71dip</item>
+        <item name="android:layout_height">52dip</item>
+    </style>
+
+    <style name="TrButton.Previous">
+        <item name="android:src">@android:drawable/ic_media_previous</item>
+    </style>
+
+    <style name="TrButton.Next">
+        <item name="android:src">@android:drawable/ic_media_next</item>
+    </style>
+
+    <style name="TrButton.Play">
+        <item name="android:src">@android:drawable/ic_media_play</item>
+    </style>
+
+    <style name="TrButton.Ffwd">
+        <item name="android:src">@android:drawable/ic_media_ff</item>
+    </style>
+
+    <style name="TrButton.Rew">
+        <item name="android:src">@android:drawable/ic_media_rew</item>
+    </style>
+
+    <style name="TrButton.Pause">
+        <item name="android:src">@android:drawable/ic_media_pause</item>
+    </style>
+
+    <style name="TransparentTheme" parent="@android:style/Theme.Translucent">
+        <item name="android:alertDialogStyle">@style/AlertDialogTr</item>
+    </style>
+
+    <style name="AlertDialogTr">
+        <item name="android:background">@drawable/popup_full_tr</item>
+        <item name="android:fullBright">@drawable/popup_full_tr</item>
+        <item name="android:fullDark">@drawable/popup_full_tr</item>
+        <item name="android:topBright">@drawable/popup_top_tr</item>
+        <item name="android:topDark">@drawable/popup_top_tr</item>
+        <item name="android:centerBright">@drawable/popup_center_tr</item>
+        <item name="android:centerDark">@drawable/popup_center_tr</item>
+        <item name="android:centerMedium">@drawable/popup_center_tr</item>
+        <item name="android:bottomBright">@drawable/popup_bottom_tr</item>
+        <item name="android:bottomDark">@drawable/popup_bottom_tr</item>
+        <item name="android:bottomMedium">@drawable/popup_bottom_tr</item>
+    </style>
+    
+    <style name="AudioFileInfoOverlayText">
+    <item name="android:paddingLeft">4px</item>
+    <item name="android:paddingBottom">4px</item>
+    <item name="android:textColor">#ffffffff</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+  
+    <style name="AudioFileInfoOverlayTextForTitle">
+    <item name="android:paddingLeft">4px</item>
+    <item name="android:paddingBottom">4px</item>
+    <item name="android:textColor">#ccffffff</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+
+</resources>

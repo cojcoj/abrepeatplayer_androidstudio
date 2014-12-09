@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="speed">
+		<item>"1/8"</item>                 
+		<item>"1/4"</item>                 
+		<item>"1/2"</item> 
+		<item>"Normal Speed"</item>                 
+    </array>
+    
+</resources>
