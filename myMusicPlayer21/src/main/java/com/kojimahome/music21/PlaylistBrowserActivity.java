@@ -101,7 +101,7 @@ public class PlaylistBrowserActivity extends ListActivity
         }
 
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         mToken = MusicUtils.bindToService(this, new ServiceConnection() {
             public void onServiceConnected(ComponentName classname, IBinder obj) {

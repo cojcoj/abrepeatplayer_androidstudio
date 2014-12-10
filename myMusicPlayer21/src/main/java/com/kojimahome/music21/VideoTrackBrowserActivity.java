@@ -124,7 +124,7 @@ implements View.OnCreateContextMenuListener, MusicUtils.Defs
         Intent intent = getIntent();
         if (intent != null) {
             if (intent.getBooleanExtra("withtabs", false)) {
-                requestWindowFeature(Window.FEATURE_NO_TITLE);
+                // requestWindowFeature(Window.FEATURE_NO_TITLE);
             }
         }
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
