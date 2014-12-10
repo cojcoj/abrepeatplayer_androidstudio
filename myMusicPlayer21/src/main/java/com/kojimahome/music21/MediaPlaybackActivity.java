@@ -185,7 +185,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         	ed.commit();
         }
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.audio_player);
 
         mCurrentTime = (TextView) findViewById(R.id.currenttime);
