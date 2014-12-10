@@ -44,6 +44,7 @@ import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
 import android.app.KeyguardManager;
 import android.app.SearchManager;
+import android.app.ActionBar;
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -141,6 +142,7 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
     private boolean mPickingABPos = false;
     private boolean mABWideBar = true;
     private static long mLastPauseClick = 0;
+    private ActionBar mActionBar;
     
 //    private musiXmatchLyricsConnector lyricsPlugin= null;
 
