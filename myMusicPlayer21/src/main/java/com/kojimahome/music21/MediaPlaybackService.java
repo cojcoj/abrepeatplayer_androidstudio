@@ -1033,6 +1033,7 @@ public class MediaPlaybackService extends Service {
             } else if (CMDABPOSSELECTED.equals(cmd)) {
             	long apos = intent.getLongExtra(ABDbAdapter.KEY_APOS, 0);
             	long bpos = intent.getLongExtra(ABDbAdapter.KEY_BPOS, 0);
+                mAbRecRowId = intent.getLongExtra(ABDbAdapter.KEY_ROWID, -1);
             	int currentposition = intent.getIntExtra(ABDbAdapter.KEY_POSITION, -1);
 //                	if (mService != null) {
                 	if (abRepeatingState() != MediaPlaybackService.ABREPEATING_NOT) {

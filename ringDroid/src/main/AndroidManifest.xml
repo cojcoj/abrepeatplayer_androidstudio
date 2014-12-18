@@ -44,7 +44,7 @@
         <!-- Main activity that's launched when the user opens Ringdroid. -->
         <activity android:name="RingdroidSelectActivity"
                   android:label="@string/main_activity_label">
-            
+
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT" />
                 <category android:name="android.intent.category.DEFAULT" />
