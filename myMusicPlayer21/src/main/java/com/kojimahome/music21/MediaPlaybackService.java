@@ -1050,7 +1050,8 @@ public class MediaPlaybackService extends Service {
             				clearABPos();
             				seek(apos);
             			}
-            		}               	
+            		}
+                    mAbRecRowId = intent.getLongExtra(ABDbAdapter.KEY_ROWID, -1);
                 	play();
                 	setPosInAbList(currentposition);
                 	notifyChange(ABPOS_SET_BY_BT);
