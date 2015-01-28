@@ -21,7 +21,7 @@ ADDED from AndroidManifest.xml:23:5
 		ADDED from AndroidManifest.xml:23:23
 uses-permission#android.permission.WRITE_SETTINGS
 ADDED from AndroidManifest.xml:25:5
-MERGED from ABRepeatPlayer:ringDroid:unspecified:33:5
+MERGED from ABRepeatPlayer:ringDroid:unspecified:31:5
 	android:name
 		ADDED from AndroidManifest.xml:25:22
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
@@ -43,7 +43,7 @@ ADDED from AndroidManifest.xml:29:5
 		ADDED from AndroidManifest.xml:29:22
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:30:5
-MERGED from ABRepeatPlayer:ringDroid:unspecified:34:5
+MERGED from ABRepeatPlayer:ringDroid:unspecified:32:5
 	android:name
 		ADDED from AndroidManifest.xml:30:22
 uses-sdk
@@ -59,7 +59,7 @@ MERGED from ABRepeatPlayer:ringDroid:unspecified:26:5
 		INJECTED from AndroidManifest.xml:0:0
 application
 ADDED from AndroidManifest.xml:35:5
-MERGED from ABRepeatPlayer:ringDroid:unspecified:38:5
+MERGED from ABRepeatPlayer:ringDroid:unspecified:36:5
 	android:label
 		ADDED from AndroidManifest.xml:37:9
 	android:icon
@@ -330,7 +330,7 @@ ADDED from AndroidManifest.xml:282:9
 		ADDED from AndroidManifest.xml:282:19
 activity#com.ringdroid.RingdroidEditActivity
 ADDED from AndroidManifest.xml:286:9
-MERGED from ABRepeatPlayer:ringDroid:unspecified:60:9
+MERGED from ABRepeatPlayer:ringDroid:unspecified:58:9
 	android:windowSoftInputMode
 		ADDED from AndroidManifest.xml:288:19
 	android:configChanges
@@ -433,27 +433,19 @@ ADDED from AndroidManifest.xml:353:13
 		ADDED from AndroidManifest.xml:353:66
 	android:name
 		ADDED from AndroidManifest.xml:353:24
-uses-permission#android.permission.READ_CONTACTS
-ADDED from ABRepeatPlayer:ringDroid:unspecified:31:5
-	android:name
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:31:22
-uses-permission#android.permission.WRITE_CONTACTS
-ADDED from ABRepeatPlayer:ringDroid:unspecified:32:5
-	android:name
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:32:22
 supports-screens
-ADDED from ABRepeatPlayer:ringDroid:unspecified:36:5
+ADDED from ABRepeatPlayer:ringDroid:unspecified:34:5
 	android:anyDensity
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:36:23
+		ADDED from ABRepeatPlayer:ringDroid:unspecified:34:23
 activity#com.ringdroid.RingdroidSelectActivity
-ADDED from ABRepeatPlayer:ringDroid:unspecified:41:9
+ADDED from ABRepeatPlayer:ringDroid:unspecified:39:9
 	android:label
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:43:13
+		ADDED from ABRepeatPlayer:ringDroid:unspecified:41:13
 	android:name
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:42:13
+		ADDED from ABRepeatPlayer:ringDroid:unspecified:40:13
 activity#com.ringdroid.ChooseContactActivity
-ADDED from ABRepeatPlayer:ringDroid:unspecified:72:9
+ADDED from ABRepeatPlayer:ringDroid:unspecified:70:9
 	android:configChanges
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:74:13
+		ADDED from ABRepeatPlayer:ringDroid:unspecified:72:13
 	android:name
-		ADDED from ABRepeatPlayer:ringDroid:unspecified:73:13
+		ADDED from ABRepeatPlayer:ringDroid:unspecified:71:13

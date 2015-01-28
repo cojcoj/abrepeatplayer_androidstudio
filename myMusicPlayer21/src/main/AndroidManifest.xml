@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.kojimahome.music21"
-        android:versionCode="307055"
-        android:versionName="3.7.5.5"
+        android:versionCode="307056"
+        android:versionName="3.7.5.6"
         android:installLocation="auto">
 
     <original-package android:name="com.kojimahome.music21" />
