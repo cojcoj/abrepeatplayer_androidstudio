@@ -495,7 +495,7 @@ public class ABPosPickerActivity extends ListActivity
                     "com.ringdroid.RingdroidEditActivity");
                     startActivityForResult(intent2, EXPORT_AB_SOUND);
                 } catch (Exception e) {
-                    Log.e(LOGTAG, "Couldn't start ringdroid editor");
+                    Log.e(LOGTAG, "Couldn't start ringdroid editor:"+e);
                 }
             	break;
         }

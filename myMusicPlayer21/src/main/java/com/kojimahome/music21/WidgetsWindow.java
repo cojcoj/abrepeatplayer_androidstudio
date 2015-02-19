@@ -110,6 +110,7 @@ public class WidgetsWindow extends MultiWindow {
     private String mTrackName;
     private long mDuration;
     private String mMusicPath;
+    private String mMusicData;
     
     private DecimalFormat df;
     
@@ -691,6 +692,8 @@ public class WidgetsWindow extends MultiWindow {
       if (mTrackName == null) mTrackName = "";
       mMusicPath = i.getStringExtra(ABDbAdapter.KEY_MUSICPATH);
       if (mMusicPath == null) mMusicPath = "";
+      mMusicData = i.getStringExtra(ABDbAdapter.KEY_MUSIC_DATA);
+      if (mMusicData == null) mMusicData = "";
       
       mMarqueeText.setText(mTrackName + " : " + mAlbumnName + " : " + mArtistName);
       mDuration = i.getLongExtra(ABDbAdapter.KEY_MUSICDURATION, 0);
@@ -1173,6 +1176,7 @@ public class WidgetsWindow extends MultiWindow {
         intent.setClass(this, ABPosPickerActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(ABDbAdapter.KEY_MUSICTITLE, mTrackName);
+        intent.putExtra(ABDbAdapter.KEY_MUSIC_DATA, mMusicData);
         intent.putExtra(ABDbAdapter.KEY_MUSICPATH, mMusicPath);
         intent.putExtra(ABDbAdapter.KEY_MUSICDURATION, mDuration);
         intent.putExtra(ABPosPickerActivity.CALLEDFROMFLOATPAD, true);
