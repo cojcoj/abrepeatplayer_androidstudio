@@ -79,7 +79,7 @@
         <activity android:name="com.kojimahome.music21.MediaPlaybackActivity"
                 
                 android:label="@string/mediaplaybacklabel"
-                android:taskAffinity=""
+
                 android:launchMode="singleTask"
                 android:clearTaskOnLaunch="true"
                 android:excludeFromRecents="true" >
@@ -239,7 +239,7 @@
         </activity>
         
         <activity android:name="com.kojimahome.music21.ABPosPickerActivity"
-            android:taskAffinity=""
+
                 android:label="@string/mediapickerlabel">
         </activity>    
         
