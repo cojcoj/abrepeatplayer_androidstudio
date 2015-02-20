@@ -383,12 +383,12 @@
     <string name="abpos_updated">AB Positions updated</string>
     
     <string name="release_note">Release Note</string>
-    <string name="new_features">AB Repeat 3.7.5 Changes</string>
-    <string name="new_features_01">1. Check Mode Setting became sticky. It\&apos;s remembered now. You don\&apos;t have to set it every time.(Audio/Video)</string>
-    <string name="new_features_02">2. Before recording duplicated AB Points, it asks if you really want it. And if you edit it after record it or selected it from AB List, it asks if you want to rewrite it or save it as a new entry.(Audio/Video)</string>
-    <string name="new_features_03">3. In normal AB Repeat, double-clicking Prev Button will not clear AB Repeat, but only jumps to A Point.(Audio/Video)</string>
-    <string name="new_features_04">4. If you don\&apos;t like 2. or 3., you can select old behaviours in \&quot;AB Preferences\&quot; in Menu.(Audio/Video)</string>
-    <string name="new_features_05">5. Video SlowMotion (poor audio quality, sorry).</string>
+    <string name="new_features">AB Repeat 3.7.5.7 Changes</string>
+    <string name="new_features_01">1. IMPORTANT: Task Affilication changed.(Audio/Video)</string>
+    <string name="new_features_02">If you have any problems, please report to us.</string>
+    <string name="new_features_03">2. AB Export works from FloatPad AB List.(Audio)</string>
+    <string name="new_features_04">3. Menu relocated into ActionBar.(Audio/Video)</string>
+    <string name="new_features_05">4. Other minor bug fixes.</string>
     <string name="new_features_donation">* Donation or encouraging comments or rating would be appreciated.　Very many thanks to the people who have donated already!</string>
     <string name="new_features_button_01">AB Repeat Preferences</string>
     <string name="new_features_button_02">Playing AB&amp;BM list Guide</string>
@@ -500,8 +500,8 @@
     <string name="search_help_two">Type keywords using the softkeyboard appeared. It displays matched contents in each category immediately.</string>
     <string name="search_help_three">If you want to search for all the categories, use Google seach box and select AB Repeat player.</string>
     <string name="search_help_four">Search function for separate categories existed from the first release, but it was not available for devices which doesn\&apos;t have search buttons. This newly added Search item in the menu enable all users access to this function.</string>
-    <string name="feedback_please">Please submit questions or requests at\n http://learnerstechlab.com/support/ \nPlease avoid Android Play Review page for supports and requests. It\&apos;s very hard to support without bi-directional communications.</string>
-    <string name="user_guide_here">User Guide and more info at\n http://learnerstechlab.com/ab_guide/</string>
+    <string name="feedback_please">Please submit questions or requests at\n http://learnerstechlab.com/support/ (in maintenance) \nPlease avoid Android Play Review page for supports and requests. It\&apos;s very hard to support without bi-directional communications.</string>
+    <string name="user_guide_here">User Guide and more info at\n http://learnerstechlab.com/ab_guide/ (in maintenance)</string>
     
     <!-- Floating Window related -->
     <string name="window_icon">Window icon</string>

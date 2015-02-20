@@ -122,8 +122,6 @@ ADDED from AndroidManifest.xml:79:9
 		ADDED from AndroidManifest.xml:84:17
 	android:excludeFromRecents
 		ADDED from AndroidManifest.xml:85:17
-	android:taskAffinity
-		ADDED from AndroidManifest.xml:82:17
 	android:name
 		ADDED from AndroidManifest.xml:79:19
 	android:launchMode
@@ -264,8 +262,6 @@ activity#com.kojimahome.music21.ABPosPickerActivity
 ADDED from AndroidManifest.xml:241:9
 	android:label
 		ADDED from AndroidManifest.xml:243:17
-	android:taskAffinity
-		ADDED from AndroidManifest.xml:242:13
 	android:name
 		ADDED from AndroidManifest.xml:241:19
 activity#com.kojimahome.music21.ABPosDispOrderActivity

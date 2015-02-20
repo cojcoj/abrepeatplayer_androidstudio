@@ -219,12 +219,12 @@
     <string name="abpos_updated">AB点を更新しました</string>
     
     <string name="release_note">リリースノート</string>
-    <string name="new_features">AB Repeat 3.7.5 変更点</string>
-    <string name="new_features_01">1. Check Modeは設定すると覚えています。毎回、設定する必要がありません。(Video/Audio)</string>
-    <string name="new_features_02">2. AB点を記録する時、既に同じものが記録されていれば、記録を実行するか確認します。同様に、AB点を選んだ後、あるいは記録した後に編集した場合、上書きするか、新規に作成するか確認します。(Video/Audio)</string>
-    <string name="new_features_03">3. 通常のABリピート時に、Prevボタンのダブルクリックは、AB点をクリアせず、単にA点にジャンプします。(Audio/Video)</string>
-    <string name="new_features_04">4. 2.と3.に関し、以前の振る舞いに戻したい場合、再生画面のメニューでAB設定をその他から選んで、設定できます。</string>
-    <string name="new_features_05">5. ビデオのスロー再生が出来ます。（音質は悪いのであしからず）</string>
+    <string name="new_features">AB Repeat 3.7.5.7 変更点</string>
+    <string name="new_features_01">1. タスクアフィリエイションを変えました。(Video/Audio)</string>
+    <string name="new_features_02">不都合がある場合、レポートお願いします。</string>
+    <string name="new_features_03">2. ABエクスポートがFloatPadからのABリストから使えます。(Audio)</string>
+    <string name="new_features_04">3.メニューがアクションバーに移動しました。</string>
+    <string name="new_features_05">4. その他、幾つかのバグ修正。</string>
     <string name="new_features_donation">* 寄付、または励ましのコメント・評価を宜しくお願いします。既に御寄附いただいた方々に感謝！</string>
     <string name="new_features_button_01">AB Repeat操作設定</string>
     <string name="new_features_button_02">AB&amp;BMリストプレイユーザーガイド</string>
@@ -336,6 +336,6 @@
     <string name="search_help_two">ソフトキーボードが表れるので、検索キーワードを入力してください。各カテゴリーでの検索結果が即座に表示されます。</string>
     <string name="search_help_three">もし、総てのカテゴリーで検索したい場合は、Google検索でAB Repeat Playerを選択してください。</string>
     <string name="search_help_four">カテゴリー毎の検索機能は最初のリリースから存在していましたが、検索ボタンを持たない機種では使えませんでした。メニューに検索を追加することで、全てのユーザが使用できるようになりました。</string>
-    <string name="feedback_please">質問、リクエストをお待ちしてます。\n http://learnerstechlab.com/support/ \nサポートやリクエストにGoogle PlayのReviewを使用することは、なるべく避けてください。双方向のコミュニケーション無しでのサポートは大変難しくなります。</string>
-    <string name="user_guide_here">ユーザーガイドや詳しい情報は、\n  http://learnerstechlab.com/ab_guide/</string>
+    <string name="feedback_please">質問、リクエストをお待ちしてます。\n http://learnerstechlab.com/support/（保守中） \nサポートやリクエストにGoogle PlayのReviewを使用することは、なるべく避けてください。双方向のコミュニケーション無しでのサポートは大変難しくなります。</string>
+    <string name="user_guide_here">ユーザーガイドや詳しい情報は、\n  http://learnerstechlab.com/ab_guide/（保守中）</string>
 </resources>
