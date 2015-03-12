@@ -49,12 +49,11 @@ MERGED from ABRepeatPlayer:ringDroid:unspecified:32:5
 uses-sdk
 ADDED from AndroidManifest.xml:32:5
 MERGED from ABRepeatPlayer:ringDroid:unspecified:26:5
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:33:12
-		INJECTED from AndroidManifest.xml:0:0
-		INJECTED from AndroidManifest.xml:0:0
-	android:minSdkVersion
-		ADDED from AndroidManifest.xml:32:15
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 application

@@ -1,20 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 11
+    compileSdkVersion 19
     buildToolsVersion "20.0.0"
-
     defaultConfig {
         applicationId "com.kojimahome.music21"
-        minSdkVersion 11
-        targetSdkVersion 14
+        minSdkVersion 19
+        targetSdkVersion 19
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+    productFlavors {
     }
 }
 

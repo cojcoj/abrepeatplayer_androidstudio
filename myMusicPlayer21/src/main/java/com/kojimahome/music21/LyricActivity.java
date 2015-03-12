@@ -66,7 +66,7 @@ public class LyricActivity extends Activity {
         textv = (LyricWebView) findViewById(R.id.tv);
         textv.getSettings().setJavaScriptEnabled(true);
 		textv.getSettings().setAllowFileAccess(true);
-		textv.getSettings().setPluginsEnabled(true);
+//		textv.getSettings().setPluginsEnabled(true);
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) textv.getSettings().setPluginState(PluginState.ON);
 		textv.getSettings().setSupportZoom(true);
 		textv.getSettings().setBuiltInZoomControls(true);

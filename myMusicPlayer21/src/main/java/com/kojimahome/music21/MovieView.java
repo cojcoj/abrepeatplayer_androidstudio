@@ -73,6 +73,8 @@ public class MovieView extends NoSearchActivity  {
     private boolean mControlResumed = false;  // Whether the MovieViewControl is resumed.
     
     private static AlertDialog mDictDialog;
+
+
     
 
     @Override
@@ -100,7 +102,9 @@ public class MovieView extends NoSearchActivity  {
         mFinishOnCompletion = intent.getBooleanExtra(
                 MediaStore.EXTRA_FINISH_ON_COMPLETION, true);
         MyMediaController.clearAfterRelease();
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

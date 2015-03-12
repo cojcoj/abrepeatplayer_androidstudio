@@ -1567,7 +1567,7 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
             disableUnsupportedButtons();
 
             int [] anchorpos = new int[2];
-            mAnchor.getLocationOnScreen(anchorpos);
+            mAnchor.getLocationInWindow(anchorpos);
 
             WindowManager.LayoutParams p = new WindowManager.LayoutParams();
             p.gravity = Gravity.TOP;
@@ -1605,6 +1605,8 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                |View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're
@@ -1633,7 +1635,7 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
             disableUnsupportedButtons();
 
             int [] anchorpos = new int[2];
-            mAnchor.getLocationOnScreen(anchorpos);
+            mAnchor.getLocationInWindow(anchorpos);
 
             WindowManager.LayoutParams p = new WindowManager.LayoutParams();
             p.gravity = Gravity.TOP;
@@ -1668,6 +1670,8 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    |View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're

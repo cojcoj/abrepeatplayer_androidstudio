@@ -25,7 +25,7 @@
           android:versionCode="20600">
 
     <uses-sdk android:minSdkVersion="11"
-              android:targetSdkVersion="14"
+              android:targetSdkVersion="19"
                />
 
     <uses-permission android:name="android.permission.INTERNET" />
