@@ -51,6 +51,8 @@ import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.MediaController;
+import com.kojimahome.music21.MusicUtils.Defs;
+import com.kojimahome.music21.MusicUtils.ServiceToken;
 
 //import com.kojimahome.music21.PolicyManager;
 
@@ -96,7 +98,7 @@ import java.util.Locale;
  * </ul>
  */
 @SuppressLint("WrongViewCast")
-public class MyMediaController extends Dialog {
+public class MyMediaController extends Dialog implements MusicUtils.Defs {
 
     private MediaPlayerControl  mPlayer;
     private Context             mContext;
@@ -1605,9 +1607,10 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                |View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        
+        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're
         // paused with the progress bar showing the user hits play.
@@ -1670,9 +1673,10 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
+        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    |View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're
         // paused with the progress bar showing the user hits play.
