@@ -376,6 +376,8 @@
     <string name="ask_if_overwrite_summary">If recorded AB was modified and to be recorded, ask if you want to overwrite or just add.</string>
     <string name="prev_behaviour_old_title">Old Prev Button Behaviour</string>
     <string name="prev_behaviour_old_summary">Double-click on Prev Button starts playing the prev music track.</string>
+    <string name="video_navbar_autohide_title">Navigation Bar Auto-Hide in Video</string>
+    <string name="video_navbar_autohide_summary">Navigation Bar automatically hidden when enabled. Always shown when disabled.</string>
     <string name="ab_edited">AB Points edited</string>
     <string name="ab_update_or_new">Update Old or Create New?</string>
     <string name="ab_update">Update</string>

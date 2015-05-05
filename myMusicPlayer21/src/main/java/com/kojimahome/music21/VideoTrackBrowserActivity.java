@@ -960,6 +960,8 @@ implements View.OnCreateContextMenuListener, MusicUtils.Defs
          * - the list of currently playing songs
          */
         super.onCreateOptionsMenu(menu);
+        menu.add(0, AB_SETTINGS, 0, R.string.ab_prefs)
+                .setIcon(R.drawable.ic_menu_music_library);
         menu.add(0, DONATION, 0, R.string.ab_donation).setIcon(R.drawable.ic_menu_donation);
 //        if (mPlaylist == null) {
 //            menu.add(0, PLAY_ALL, 0, R.string.play_all).setIcon(R.drawable.ic_menu_play_clip);
@@ -1040,6 +1042,11 @@ implements View.OnCreateContextMenuListener, MusicUtils.Defs
             		}
             	}
             	return true;
+            case AB_SETTINGS:
+                intent = new Intent();
+                intent.setClass(this, PrefsActivityVideo.class);
+                startActivity(intent);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

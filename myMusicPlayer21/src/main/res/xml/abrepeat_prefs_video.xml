@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="ab_preferences_main"
+    android:summary="@string/ab_prefs_title"
+    android:title="@string/ab_prefs_summary" >
+
+    <CheckBoxPreference
+        android:key="video_navbar_autohide"
+        android:summary="@string/video_navbar_autohide_summary"
+        android:title="@string/video_navbar_autohide_title"
+        android:defaultValue="true" />
+
+</PreferenceScreen>
