@@ -1332,7 +1332,7 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
     @Override
     public void onStop() {
         paused = true;
-        if (mService != null && mOneShot && getChangingConfigurations() == 0 && mPickingABPos == false) {
+        if (mService != null && false && getChangingConfigurations() == 0 && mPickingABPos == false) {
             try {
                 mService.stop();
             } catch (RemoteException ex) {
