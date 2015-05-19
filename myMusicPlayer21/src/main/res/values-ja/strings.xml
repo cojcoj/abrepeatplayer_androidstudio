@@ -214,6 +214,8 @@
     <string name="prev_behaviour_old_summary">ABリピート中にPrevボタンをダブルクリックすると前の曲に飛ぶ</string>
     <string name="video_navbar_autohide_title">ナビゲーションバーのオートハイド（Video）</string>
     <string name="video_navbar_autohide_summary">Enableするとナビゲーションバーの自動隠蔽がOnとなります。Disableの場合、常時表示となります。</string>
+    <string name="video_scrn_orientation_title">ビデオ画面の向き</string>
+    <string name="video_scrn_orientation_summary">自動または今の向きにロック</string>
     <string name="ab_edited">AB点が編集されてます</string>
     <string name="ab_update_or_new">更新しますか？新規作成しますか？</string>
     <string name="ab_update">更新</string>

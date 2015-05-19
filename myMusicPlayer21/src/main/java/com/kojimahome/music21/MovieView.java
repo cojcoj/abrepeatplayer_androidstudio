@@ -51,7 +51,7 @@ import android.widget.Toast;
 /**
  * This activity plays a video from a specified URI.
  */
-public class MovieView extends NoSearchActivity  {
+public class MovieView extends NoSearchActivity implements MusicUtils.Defs {
     private static final String TAG = "MovieView";
 
   public final static int CHILD_MENU_BASE = 0;
@@ -91,14 +91,15 @@ public class MovieView extends NoSearchActivity  {
                 }
             }
         };
-        if (intent.hasExtra(MediaStore.EXTRA_SCREEN_ORIENTATION)) {
-            int orientation = intent.getIntExtra(
-                    MediaStore.EXTRA_SCREEN_ORIENTATION,
-                    ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
-            if (orientation != getRequestedOrientation()) {
-                setRequestedOrientation(orientation);
-            }
-        }
+//        if (intent.hasExtra(MediaStore.EXTRA_SCREEN_ORIENTATION)) {
+//            int orientation = intent.getIntExtra(
+//                    MediaStore.EXTRA_SCREEN_ORIENTATION,
+//                    ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+//            if (orientation != getRequestedOrientation()) {
+//                setRequestedOrientation(orientation);
+//            }
+//        }
+
         mFinishOnCompletion = intent.getBooleanExtra(
                 MediaStore.EXTRA_FINISH_ON_COMPLETION, true);
         MyMediaController.clearAfterRelease();
@@ -275,6 +276,22 @@ public class MovieView extends NoSearchActivity  {
             mControl.onResume();
             mControlResumed = true;
         }
+        int orientation = MusicUtils.getIntPref(getApplicationContext(), VIDEO_SCRN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        switch (orientation) {
+            case ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+//                Log.i(TAG, "setOrientation:UNSPECIFIED");
+                break;
+            case ActivityInfo.SCREEN_ORIENTATION_PORTRAIT:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//                Log.i(TAG, "setOrientation:PORTRAIT");
+                break;
+            case ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//                Log.i(TAG, "setOrientation:LANDSCAPE");
+                break;
+        }
+
     }
 
     @Override

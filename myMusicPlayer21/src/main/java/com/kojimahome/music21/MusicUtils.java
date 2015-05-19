@@ -124,6 +124,8 @@ public class MusicUtils {
         public final static String ASK_IF_OVERWRITE = "ask_if_overwrite";
         public final static String PREV_BEHAVIOUR_OLD = "prev_behaviour_old";
         public final static String VIDEO_NAVBAR_AUTOHIDE = "video_navbar_autohide";
+        public final static String VIDEO_SCRN_LOCK_AUTO = "video_scrn_lock_auto";
+        public final static String VIDEO_SCRN_ORIENTATION = "video_scrn_orientation";
         public final static String CHECK_MODE = "check_mode";
     }
 

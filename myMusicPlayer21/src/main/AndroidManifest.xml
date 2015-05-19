@@ -283,7 +283,8 @@
                 android:label="@string/ab_prefs_title">
         </activity>
         <activity android:name="com.kojimahome.music21.PrefsActivityVideo"
-            android:label="@string/ab_prefs_title">
+            android:label="@string/ab_prefs_title"
+            android:taskAffinity="learnerstechlab.task.video">
         </activity>
 
         <activity android:name="com.ringdroid.RingdroidEditActivity"

@@ -1607,10 +1607,11 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
-        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        }
+        setNavBarVisibility();
+//        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
+//            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//        }
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're
         // paused with the progress bar showing the user hits play.
@@ -1673,10 +1674,11 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //        	Log.i("@@@VideoDebug", "updatePausePlay called in show");
 //    	}
         updatePausePlay();
-        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        }
+        setNavBarVisibility();
+//        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
+//            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//        }
         // cause the progress bar to be updated even if mShowing
         // was already true.  This happens, for example, if we're
         // paused with the progress bar showing the user hits play.
@@ -1688,6 +1690,26 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 //            mHandler.sendMessageDelayed(msg, timeout);
 //        }
     	}};
+
+    private void setNavBarVisibility() {
+//        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
+//            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//        }
+        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
+            getWindow().getDecorView().setSystemUiVisibility(
+                      View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
+                    | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
+           );
+        } else {
+            getWindow().getDecorView().setSystemUiVisibility(
+                      View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            getWindow().getDecorView().setFitsSystemWindows(true);
+        }
+    }
     
     public boolean isShowing() {
         return mShowing;

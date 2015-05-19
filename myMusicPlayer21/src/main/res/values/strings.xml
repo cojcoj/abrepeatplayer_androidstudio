@@ -378,6 +378,8 @@
     <string name="prev_behaviour_old_summary">Double-click on Prev Button starts playing the prev music track.</string>
     <string name="video_navbar_autohide_title">Navigation Bar Auto-Hide in Video</string>
     <string name="video_navbar_autohide_summary">Navigation Bar automatically hidden when enabled. Always shown when disabled.</string>
+    <string name="video_scrn_orientation_title">Video Screen Orientation</string>
+    <string name="video_scrn_orientation_summary">Auto or Lock in current orientation</string>
     <string name="ab_edited">AB Points edited</string>
     <string name="ab_update_or_new">Update Old or Create New?</string>
     <string name="ab_update">Update</string>

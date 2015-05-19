@@ -5,13 +5,13 @@
 		<item>"1/8"</item>                 
 		<item>"1/4"</item>                 
 		<item>"1/2"</item> 
-		<item>"Normal Speed"</item>                 
+		<item>"標準速度"</item>
     </array>
 
     <string-array name="video_orientation_entries">
-        <item>Auto</item>
-        <item>Portrait</item>
-        <item>Landscape</item>
+        <item>自動</item>
+        <item>縦長</item>
+        <item>横長</item>
     </string-array>
     <string-array name="video_orientation_values">
         <item>1</item>
