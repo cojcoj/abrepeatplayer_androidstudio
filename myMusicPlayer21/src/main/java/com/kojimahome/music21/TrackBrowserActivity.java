@@ -315,6 +315,7 @@ public class TrackBrowserActivity extends ListActivity
         if (mTrackCursor != null) {
             getListView().invalidateViews();
         }
+        MusicUtils.updateNowPlaying(TrackBrowserActivity.this);
         MusicUtils.setSpinnerState(this);
     }
     @Override
