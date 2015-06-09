@@ -16,6 +16,7 @@
 
 package com.kojimahome.music21;
 
+import com.google.android.gms.analytics.HitBuilders;
 import com.kojimahome.music21.CreatePlaylist;
 import com.kojimahome.music21.DeleteItems;
 import com.kojimahome.music21.MediaPlaybackService;
@@ -477,6 +478,9 @@ public class ABPosPickerActivity extends ListActivity
                 startActivityForResult(intent, RENAME_ABPOS);
                 break;
             case EXPORT_AB_SOUND:
+                MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                        .setLabel("ExportABinList")
+                        .build());
                 try {
                     Intent intent2 = new Intent(Intent.ACTION_EDIT,
                             Uri.parse(mMusicData));

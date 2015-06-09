@@ -51,6 +51,8 @@ import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.MediaController;
+
+import com.google.android.gms.analytics.HitBuilders;
 import com.kojimahome.music21.MusicUtils.Defs;
 import com.kojimahome.music21.MusicUtils.ServiceToken;
 
@@ -179,6 +181,7 @@ public class MyMediaController extends Dialog implements MusicUtils.Defs {
     private TelephonyManager teleMgr = null;
     private static int mPausedPosition = 0;
     private static boolean mKeyeventTooClose = false;
+//    private boolean mNavBarHide = false;
     
     OrientationEventListener myOrientationEventListener;
 
@@ -679,6 +682,10 @@ public class MyMediaController extends Dialog implements MusicUtils.Defs {
         	final Object[] timeArgs = sTimeArgs;
         	int apos;
         	int bpos;
+
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "VideoButton")
+                    .setLabel("ABRepeat")
+                    .build());
         	
                 switch (mAbRepeatingState) {
                 	case ABREPEATING_NOT:
@@ -757,6 +764,10 @@ private View.OnLongClickListener mAbRepeatingLongListner = new View.OnLongClickL
 		
 		@Override
 		public boolean onLongClick(View v) {
+
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "VideoButton")
+                    .setLabel("ABRepeatLong")
+                    .build());
 			
 					switch (mAbRepeatingState) {
 	            	case MediaPlaybackService.ABREPEATING_NOT:
@@ -1030,6 +1041,10 @@ private View.OnClickListener mJumpButtonCenterClickListner = new View.OnClickLis
 		public void onClick(View v) {
 				String mWhereClause = "";
 				AlertDialog.Builder mybuilder;
+
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "VideoButton")
+                    .setLabel("JumpCenter")
+                    .build());
 				switch (mAbRepeatingState) {
             	case ABREPEATING_NOT:
             		long jumpdist = mPreferences.getLong("jumpdisttwo", 5000);
@@ -1252,6 +1267,10 @@ private View.OnLongClickListener mJumpButtonCenterLongListner = new View.OnLongC
 		@Override
 		public boolean onLongClick(View v) {
 			boolean consumed = false;
+
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "VideoButton")
+                    .setLabel("JumpCenterLong")
+                    .build());
 					switch (mAbRepeatingState) {
 	            	case MediaPlaybackService.ABREPEATING_NOT:
 	            		long jumpdist = mPreferences.getLong("jumpdisttwo", 5000);
@@ -1693,21 +1712,28 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
 
     private void setNavBarVisibility() {
 //        if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
-//            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-//                    | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//            getWindow().getDecorView().setSystemUiVisibility(
+//                      View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                    | View.SYSTEM_UI_FLAG_FULLSCREEN
+//                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+//              );
 //        }
         if (MusicUtils.getBooleanPref(mContext,VIDEO_NAVBAR_AUTOHIDE, true)) {
-            getWindow().getDecorView().setSystemUiVisibility(
-                      View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
-                    | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
-           );
+//            if (!mNavBarHide) {
+//                Log.i(TAG, "setNavBarHide");
+                getWindow().getDecorView().setSystemUiVisibility(
+                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
+                                | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
+                                | View.SYSTEM_UI_FLAG_IMMERSIVE
+                );
+//                mNavBarHide = true;
+//            }
         } else {
             getWindow().getDecorView().setSystemUiVisibility(
                       View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             getWindow().getDecorView().setFitsSystemWindows(true);
+//            mNavBarHide = false;
         }
     }
     
@@ -1919,6 +1945,9 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
     private View.OnLongClickListener mPauseLongListener = new View.OnLongClickListener() {
     	@Override
         public boolean onLongClick(View v) {
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "VideoButton")
+                    .setLabel("ModeSwitch")
+                    .build());
     		switchModes();
             return true;
         }

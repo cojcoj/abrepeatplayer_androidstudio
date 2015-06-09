@@ -16,6 +16,6 @@
         android:title="@string/video_scrn_orientation_title"
         android:entries="@array/video_orientation_entries"
         android:entryValues="@array/video_orientation_values"
-        android:defaultValue="1"/>
+        android:defaultValue="-1"/>
 
 </PreferenceScreen>

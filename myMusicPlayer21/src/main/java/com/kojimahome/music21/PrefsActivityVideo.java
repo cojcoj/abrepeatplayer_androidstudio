@@ -21,13 +21,13 @@ public class PrefsActivityVideo extends PreferenceActivity implements MusicUtils
 		addPreferencesFromResource(R.xml.abrepeat_prefs_video);
         int orientation = MusicUtils.getIntPref(getApplicationContext(), VIDEO_SCRN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         switch (orientation) {
-            case 1:
+            case ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED:
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                 break;
-            case 2:
+            case ActivityInfo.SCREEN_ORIENTATION_PORTRAIT:
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
                 break;
-            case 3:
+            case ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE:
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                 break;
         }
@@ -44,15 +44,15 @@ public class PrefsActivityVideo extends PreferenceActivity implements MusicUtils
 //                        Log.i("PrefsActivityVideo", "rotation:" + rotation);
 //                        Log.i("PrefsActivityVideo", "selection:" + newValue.toString());
                         switch (Integer.valueOf(newValue.toString())) {
-                            case 1:
+                            case ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED:
                                 MusicUtils.setIntPref(getApplicationContext(), VIDEO_SCRN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
                                 break;
-                            case 2:
+                            case ActivityInfo.SCREEN_ORIENTATION_PORTRAIT:
                                 MusicUtils.setIntPref(getApplicationContext(), VIDEO_SCRN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
                                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
                                 break;
-                            case 3:
+                            case ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE:
                                 MusicUtils.setIntPref(getApplicationContext(), VIDEO_SCRN_ORIENTATION, ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                                 break;
@@ -65,24 +65,24 @@ public class PrefsActivityVideo extends PreferenceActivity implements MusicUtils
 
 	}
 
-    void setRotation (int rotation) {
-        switch (rotation) {
-            case ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED:
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
-                break;
-            case ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE:
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-                break;
-            case ActivityInfo.SCREEN_ORIENTATION_PORTRAIT:
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-                break;
-            case ActivityInfo.SCREEN_ORIENTATION_USER:
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
-                break;
-            case ActivityInfo.SCREEN_ORIENTATION_BEHIND:
-                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
-                break;
-        }
-    }
+//    void setRotation (int rotation) {
+//        switch (rotation) {
+//            case ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED:
+//                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+//                break;
+//            case ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE:
+//                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//                break;
+//            case ActivityInfo.SCREEN_ORIENTATION_PORTRAIT:
+//                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//                break;
+//            case ActivityInfo.SCREEN_ORIENTATION_USER:
+//                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
+//                break;
+//            case ActivityInfo.SCREEN_ORIENTATION_BEHIND:
+//                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_BEHIND);
+//                break;
+//        }
+//    }
 
 }

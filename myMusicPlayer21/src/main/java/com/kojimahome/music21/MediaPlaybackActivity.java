@@ -23,6 +23,7 @@ import java.text.*;
 
 import wei.mark.standout.StandOutWindow;
 
+import com.google.android.gms.analytics.HitBuilders;
 import com.kojimahome.music21.IMediaPlaybackService;
 import com.kojimahome.music21.R;
 import com.kojimahome.music21.IMediaPlaybackService.Stub;
@@ -572,7 +573,10 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
     };
 
     private View.OnClickListener mPauseListener = new View.OnClickListener() {
-        public void onClick(View v) {        	
+        public void onClick(View v) {
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                    .setLabel("Pause")
+                    .build());
             doPauseResume();
             long currenttime = System.currentTimeMillis();
 //            Log.i(LOGTAG, "currenttime - mLastPauseClick:" + (currenttime - mLastPauseClick));
@@ -587,6 +591,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
     private View.OnLongClickListener mPauseLongListener = new View.OnLongClickListener() {
     	@Override
         public boolean onLongClick(View v) {
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                    .setLabel("PauseLong")
+                    .build());
     		switchModes();
             return true;
         }
@@ -625,7 +632,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         	final Object[] timeArgs = sTimeArgs;
         	Long apos;
         	Long bpos;
-        	
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                    .setLabel("ABButton")
+                    .build());
         	
         	try {
         		if (mService != null) {
@@ -709,6 +718,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
 		
 		@Override
 		public boolean onLongClick(View v) {
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                    .setLabel("ABButtonLong")
+                    .build());
 			try {
 				if (mService != null) {
 					switch (mService.abRepeatingState()) {
@@ -725,6 +737,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
 			    }
 				} catch (RemoteException ex) {
 				}
+            MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                    .setLabel("ListFromABButton")
+                    .build());
 			return true;
     	}
     	
@@ -841,6 +856,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                             setJumpButtonContents();
                             showToast(R.string.bookmark_recorded);
                     	}
+                        MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                                .setLabel("BookMarkRecord")
+                                .build());
             		}
             		break;
             	case MediaPlaybackService.ABREPEATING_NOW:
@@ -930,6 +948,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
                         	sendDbModifiedtoService();
                         	showToast(R.string.abpos_recorded);
                     	}
+                        MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                                .setLabel("ABRecord")
+                                .build());
             		}
             		break;
 				}
@@ -957,6 +978,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
             		break;
             	case MediaPlaybackService.ABREPEATING_NOW:
 //            		long jumpdist2 = mPreferences.getLong("jumpdisttwo", 5000);
+                    MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                            .setLabel("AShiftPicker")
+                            .build());
             		new ABShiftPickerDialog(v.getContext(),
             				mAShiftDistSetListener,
                             R.string.adjust_apoint, R.drawable.apoint, true).show();
@@ -987,6 +1011,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
             		showToast(R.string.abpos_cleared);
             		break;
             	case MediaPlaybackService.ABREPEATING_NOW:
+                    MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                            .setLabel("BShiftPicker")
+                            .build());
             		new ABShiftPickerDialog(v.getContext(),
             				mBShiftDistSetListener,
                             R.string.adjust_bpoint, R.drawable.bpoint).show();
@@ -1021,6 +1048,9 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
 	            		break;
 	            	case MediaPlaybackService.ABREPEATING_NOW:
 	            		showAbList();
+                        MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "Button")
+                                .setLabel("ListFromJumpButton")
+                                .build());
 	            		consumed = true;
 	            		break;
 					}
@@ -1845,6 +1875,10 @@ private View.OnLongClickListener mBPosTimeLongListner = new View.OnLongClickList
             }
         } catch (RemoteException ex) {
         }
+        MyApplication.tracker().send(new HitBuilders.EventBuilder("Action", "MenuItemSelected")
+                .setLabel(Integer.toString(item.getItemId()))
+                .build());
+//        Log.i(LOGTAG,"MenuItem:"+Integer.toString(item.getItemId()));
         return super.onOptionsItemSelected(item);
     }
     

@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.kojimahome.music21"
-        android:versionCode="307057"
-        android:versionName="3.7.5.7"
+        android:versionCode="307060"
+        android:versionName="3.7.6"
         android:installLocation="auto">
 
     <original-package android:name="com.kojimahome.music21" />
@@ -33,6 +33,7 @@
         	  android:targetSdkVersion="19" />
 
     <application
+        android:name="MyApplication"
         android:icon="@drawable/app_music"
         android:label="@string/musicbrowserlabel"
         android:taskAffinity="learnerstechlab.task.music"
