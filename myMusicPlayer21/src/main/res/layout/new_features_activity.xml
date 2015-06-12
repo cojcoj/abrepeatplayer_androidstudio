@@ -152,7 +152,7 @@
             android:padding="8dip"
             android:text="@string/feedback_please"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -162,7 +162,7 @@
             android:padding="8dip"
             android:text="@string/user_guide_here"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/ok_button"

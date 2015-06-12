@@ -379,7 +379,7 @@
     <string name="video_navbar_autohide_title">Navigation Bar Auto-Hide in Video</string>
     <string name="video_navbar_autohide_summary">Navigation Bar automatically hidden when enabled. Always shown when disabled.</string>
     <string name="video_scrn_orientation_title">Video Screen Orientation</string>
-    <string name="video_scrn_orientation_summary">Auto or Lock in current orientation</string>
+    <string name="video_scrn_orientation_summary">Auto, Landscape or Portrait</string>
     <string name="ab_edited">AB Points edited</string>
     <string name="ab_update_or_new">Update Old or Create New?</string>
     <string name="ab_update">Update</string>
@@ -387,12 +387,12 @@
     <string name="abpos_updated">AB Positions updated</string>
     
     <string name="release_note">Release Note</string>
-    <string name="new_features">AB Repeat 3.7.5.7 Changes</string>
-    <string name="new_features_01">1. IMPORTANT: Task Affilication changed.(Audio/Video)</string>
-    <string name="new_features_02">If you have any problems, please report to us.</string>
-    <string name="new_features_03">2. AB Export works from FloatPad AB List.(Audio)</string>
-    <string name="new_features_04">3. Menu relocated into ActionBar.(Audio/Video)</string>
-    <string name="new_features_05">4. Other minor bug fixes.</string>
+    <string name="new_features">AB Repeat 3.7.6 Changes</string>
+    <string name="new_features_01">1. IMPORTANT: System Navigation Bar automatically hidden.(Video)</string>
+    <string name="new_features_02">You can change this behavior from Menu in Video Track List Browser.</string>
+    <string name="new_features_03">2. Music Playing don\&apos;t stop in background, when it started from File Manager.(Audio)</string>
+    <string name="new_features_04">Many People requested this, but let us know if you don\&apos;t like it.</string>
+    <string name="new_features_05">3. Other minor bug fixes.</string>
     <string name="new_features_donation">* Donation or encouraging comments or rating would be appreciated.　Very many thanks to the people who have donated already!</string>
     <string name="new_features_button_01">AB Repeat Preferences</string>
     <string name="new_features_button_02">Playing AB&amp;BM list Guide</string>
